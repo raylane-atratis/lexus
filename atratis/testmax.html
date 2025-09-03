@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            font-size: 16px;
+        }       
+    </style>
+</head>
+<body>
+     <form action=""> 
+        <fieldset>
+        <legend>Calculo de media</legend>
+        
+        <label for="">Digite sua nota primaria</label>
+        <input type="text" id="nota1" placeholder="digite!"> <br>
+
+        <label for="nota 1">E a secundaria</label>
+        <input type="text" placeholder="digite!" id="nota2"> <br>
+
+        <br> <button type="button" onclick="CalculoMedia(event)">Calcule</button>
+
+        <p id="calculo"></p>
+        <p id="situacao"></p>
+         </fieldset>
+     </form>
+
+     <script>
+       
+        function CalculoMedia(event) {
+         event.preventDefault();
+
+       let nota1 = parseFloat(document.getElementById("nota1").value);
+       let nota2 =  parseFloat(document.getElementById("nota2").value)
+
+       const media = (nota1 + nota2) / 2;
+       
+       document.getElementById("calculo").innerHTML = `Sua media é ${media}`;
+
+       if (isNaN(nota1) || isNaN(nota2)) {
+        document.getElementById("calculo").innerHTML = "Por favor, insira valores numéricos válidos.";
+       } else if (media >= 7) {
+            document.getElementById("situacao").innerHTML = "Parabéns, você foi aprovado!";
+       } else if (media >= 5) {
+            document.getElementById("situacao").innerHTML = "Você está de recuperação.";
+         } }
+     </script>
+</body>
+</html>

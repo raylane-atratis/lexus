@@ -1,0 +1,70 @@
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.left {
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+.pesquisa {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.youtube, .bell, .user {
+    margin-left: 0;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 15px;
+}
+
+sidebar {
+   display: flex;
+   align-items: stretch;
+   flex-direction: column;
+   top: 15%;
+   transform: translateY(10%);
+   position: fixed;
+}
+
+.side {
+    margin: 10px 0;
+    gap: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    margin-top: 60px;
+    gap: 8px;
+    transform: translateX(15%);
+    background-color: rgb(250, 250, 250);
+}
+
+main > * {
+    margin: 0;
+   box-sizing: border-box;
+    padding: 0;
+}
+
+main img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
