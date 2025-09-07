@@ -1,290 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
 
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding: 22px 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
 
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/atratis/lexus/fontes/dm-sans-font-family-1756927532-0/DMSans-Regular-BF64376d323f095.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+header #logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-nav {
-    width: 100%;
-    max-width: 120rem;
-    height: 90px;
-    position: relative;
-    left: 20px;
-    background-color: black;
-    display: flex;
-    z-index: 2;
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-.menu-list {
-    position: absolute;
-    width: 654px;
-    height: 29px;
-    top: 31px;
-    left: 671.69px;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    gap: 18px;
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: 100%;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 16px;
-    font-weight: 500;
+header nav ul li {
+  list-style: none;
 }
 
-   nav li {
-    list-style: none;
-    display: inline;
-    position: relative;
-    font-size: 16px;
-    height: 29px;
-    margin-right: 18px; 
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-
-#Proposta-Header {
-    position: absolute;
-    width: 171px;
-    height: 44px;
-    top: 23px;
-    left: 1352px;
-    opacity: 1;
-    border-width: 1px;
-    border-color: white;
-    border-style: solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0%;
-    text-align: center;
-    background: transparent;
+header nav #lupa-dad {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-#Lupa-Header {
-    position: absolute;
-    width: 21.99762535095215px;
-    height: 21.931976318359375px;
-    top: 34px;
-    left: 1546px;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0;
+header nav #Lupa-Header {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
 }
 
-#Background-Header {
-    width: 100%;
-    z-index: -1;
-    width: 100%;
-    max-width: 120rem;
-    height: auto;
-    object-fit: cover;
-    display: flex;
-    position: absolute;
+.banner-principal .item {
+  background-image: url(/atratis/lexus/pics/navbar/carro.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
 }
 
-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: grid;
-    grid-template-columns: autofit minmax(200px, 1fr);
-    grid-template-rows: auto;
-    margin: 0;
-    padding: 0;
+.banner-principal .item:hover .content {
+  padding-bottom: 100px;
 }
 
-#Menu-Header {
-   width: 654.616455078125;
-   height: 29;
-   range: 0 deg;
-   opacity: 1;
-   top: 31px;
-   left: 671.69px;
-   gap: 18px;
-   display: inline;
-   position: absolute;
+.banner-principal .item h1 {
+  color: white;
+  max-width: 398px;
+  width: 100%;
 }
 
-header h1 {
-    color: white;
-    font-family: 'DM Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: 5%;
-    text-transform: uppercase;
-    width: 429;
-    height: 180;    
-    top: 279px;    
-    left: 352px;    
+.banner-principal .item p {
+  color: white;
+  max-width: 412px;
+  width: 100%;
 }
 
-header p {
-    width: 412;
-    height: 57;
-    opacity: 1;
-    top: 474px;
-    left: 352px;
-    font-family: DM Sans;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0%;
-    color: white;
+.banner-principal .item .content {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 90px;
+  transition: all 1s ease-in-out;
 }
-
-#header-parag {
-    font-family: DM Sans;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 10%;
-    text-transform: uppercase;
-    border: 1px solid white;
-    width: 196px;
-    height: 49px;
-    top: 561px;
-    left: 352px;
-    text-align: center;
-    margin-top: 40px;
-    background-color: transparent;
-    color: white;
-    transition: background-color 1s, color 0.3s;
-}
-
-#header-parag:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-
-#Texto-Header {
-    max-width: 429px;
-    max-height: 331px;
-    position: absolute;
-    top: 279px;
-    left: 352px;
-    z-index: 1;
-    height: auto;
-    width: 429;
-    height: 180;
-    opacity: 1;
-    top: 279px;
-    left: 352px;
-    transform: translateY(-20%);
-}
-
- #Lexus-Logo-Header {
-position: absolute;
-opacity: 1;
-top: 22px;
-left: 352px;
-}
-
-#Texto-Header,
-#header-parag {
-    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
-}
-
-.animar-cima {
-    transform: translateY(-5px);
-    transition: 1.6s;
-}
-
 
 .Section-Carrosel {
-width: 100%;
-max-width: 120rem;
-height: auto;
-top: 600px;
-object-fit: cover;
-position: relative;
-}
-
-.carousel-item {
-    z-index: 1;
-    display: flex;
-    position: relative;
-}
-
-.carousel-container {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 25%; /* 4 imagens em grid */
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.carousel-item img {
+  background-image: url(/atratis/lexus/pics/section-carrosel/Background2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 700px;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 5px;
+.Section-Carrosel .item .content {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 74px;
 }
 
-.prev-btn {
-  left: 10px;
+.Section-Carrosel .item .content {
+  justify-self: center;
 }
 
-.next-btn {
-  right: 10px;
+.Section-Carrosel .item h1 {
+  color: black;
 }
 
-.prev-btn:hover, .next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#carrosel-back {
-    width: 100%;
-    max-width: 120rem;
-    height: auto;
-    object-fit: cover;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.Section-Carrosel .item p {
+  color: black;
 }
