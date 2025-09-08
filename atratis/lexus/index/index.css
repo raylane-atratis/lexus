@@ -95,7 +95,7 @@ header nav #Lupa-Header {
   transition: all 1s ease-in-out;
 }
 
-.Section-Carrosel {
+.carrossel {
   background-image: url(/atratis/lexus/pics/section-carrosel/Background2.jpg);
   background-position: center center;
   background-size: cover;
@@ -103,21 +103,136 @@ header nav #Lupa-Header {
   width: 100%;
 }
 
-.Section-Carrosel .item .content {
-  height: 700px;
+.Carrossel-Topo {
   display: flex;
-  flex-direction: column;
   padding-top: 74px;
+  height: 100%;
 }
 
-.Section-Carrosel .item .content {
-  justify-self: center;
+.Carrossel-Topo #h2-carrossel {
+  flex-direction: column;
 }
 
-.Section-Carrosel .item h1 {
-  color: black;
+.Carrossel-Topo button {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border: 1px solid #dfdfdf;
 }
 
-.Section-Carrosel .item p {
-  color: black;
+.carrossel .Carrossel-Topo #bnt-topo-carrossel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.Carrossel-img {
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.diferenciais-lexus {
+  background-image: linear-gradient(to left, #1d1d1d 50%, #000000b0 75%),
+    linear-gradient(to top, #1d1d1d 10%, #1d1d1d00 100%),
+    url(/atratis/lexus/pics/section-diferenciais/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 740px;
+}
+
+.diferenciais-lexus #titulo-diferenciais {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  padding-top: 72px;
+}
+
+.diferenciais-img {
+  display: flex;
+  margin-top: 48px;
+  height: 100%;
+}
+
+.diferenciais-img .container .row {
+  justify-content: center;
+}
+
+.grid-caixa {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.imagem-caixa {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.conteudo-caixa {
+  margin-top: 10px;
+}
+
+.titulo-caixa {
+  font-size: 20px;
+  font-weight: 600;
+  align-items: flex-start;
+  border-left: 1px solid;
+  padding-left: 18px;
+  color: #ffffff;
+}
+
+.texto-caixa {
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 41px;
+  text-align: center;
+}
+
+.pos-venda {
+  justify-content: center;
+  align-items: center;
+}
+
+.pos-venda .pos-venda-img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.pos-venda .pos-venda-img {
+  margin: 80px 350px;
+  background-color: #FAFAFA;
+  border: 1px solid #E4E4E4;
+}
+
+.pos-venda .pos-venda-img .pos-venda-text {
+  padding: 42px 50px;
+}
+
+.pos-venda .pos-venda-img .pos-venda-text p {
+  display: flex;
+  flex-flow: column wrap ;
+  margin-top: 10px;
+  width: 540px;
+}
+
+.conheca-mais {
+  width: 100%;
+  height: 565px;
+  background-image: url(/atratis/lexus/pics/carro-p-seção-de-saiba-mais.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 110px;
+  display: flex;
+  color: white;
 }

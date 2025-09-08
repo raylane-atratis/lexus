@@ -5,7 +5,7 @@ jQuery(".owl-carros").owlCarousel({
   margin: 0,
   dots: true,
   nav: false,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 5000,
   responsive: {
     0: {
