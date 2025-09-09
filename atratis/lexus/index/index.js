@@ -39,3 +39,34 @@ jQuery(".owl-banner-principal").owlCarousel({
     },
   },
 });
+
+let allItemsHTML = [];
+
+$(document).ready(function () {
+  // Inicializa o carrossel
+  $('.owl-carros').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    nav: true
+  });
+
+  // Salva os slides originais como HTML
+  allItemsHTML = $('.owl-carros .item').map(function () {
+    return this.outerHTML;
+  }).get();
+});
+
+function filterCars(type, clickedBtn) {
+  // Atualiza botões ativos
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  clickedBtn.classList.add('active');
+
+  // Filtra os slides
+  const filteredHTML = allItemsHTML.filter(html => {
+    return type === 'all' || html.includes(`class="item ${type}"`) || html.includes(`class="item ${type} `);
+  });
+
+  // Substitui os slides no carrossel
+  $('.owl-carros').trigger('replace.owl.carousel', [filteredHTML.join('')]).trigger('refresh.owl.carousel');
+}

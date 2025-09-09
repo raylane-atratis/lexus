@@ -130,14 +130,63 @@ header nav #Lupa-Header {
   height: 100%;
 }
 
-.Carrossel-img {
+.carrossel .Carrossel-img {
   display: flex;
-  position: absolute;
-  z-index: 999;
-  align-items: center;
-  height: 100%;
+  margin-top: 95px;
   width: 100%;
 }
+
+.carrossel .Carrossel-img h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.carrossel .Carrossel-img p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #484d51;
+}
+
+.carrossel .Carrossel-img span {
+  font-weight: 600;
+}
+
+.carrossel .Carrossel-img .item button {
+  display: flex;
+  max-width: 280px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.tab-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: black;
+  color: white;
+}
+
+.carrossel .Carrossel-img img {
+  width: 100%;
+  margin-bottom: 22px;
+  max-width: 280px;
+  height: 100%;
+  max-height: 125px;
+}
+
+
 
 .diferenciais-lexus {
   background-image: linear-gradient(to left, #1d1d1d 50%, #000000b0 75%),
@@ -157,74 +206,94 @@ header nav #Lupa-Header {
   padding-top: 72px;
 }
 
-.diferenciais-img {
+.diferenciais-lexus .diferenciais-img {
   display: flex;
   margin-top: 48px;
   height: 100%;
 }
 
-.diferenciais-img .container .row {
+.diferenciais-lexus .diferenciais-img .container .row {
   justify-content: center;
 }
 
-.grid-caixa {
-  padding: 40px 0;
-  background-color: #f9f9f9;
+.diferenciais-lexus .diferenciais-img .linha {
+  width: 1px;
+  position: absolute;
+  height: 110px;
+  background-color: #ffffff;
+  margin-right: 20px;
 }
 
-.imagem-caixa {
+.diferenciais-lexus .diferenciais-img img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-width: 235px;
 }
 
-.conteudo-caixa {
+.diferenciais-lexus .diferenciais-img .conteudo-caixa {
   margin-top: 10px;
 }
 
-.titulo-caixa {
+.diferenciais-lexus .diferenciais-img .conteudo-texto {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+  height: 60px;
+}
+
+.diferenciais-lexus .diferenciais-img .titulo-caixa {
   font-size: 20px;
-  font-weight: 600;
-  align-items: flex-start;
-  border-left: 1px solid;
-  padding-left: 18px;
+  font-weight: 400;
+  text-transform: none;
   color: #ffffff;
 }
 
-.texto-caixa {
+.diferenciais-lexus .diferenciais-img .texto-caixa {
+  display: flex;
   font-size: 15px;
   color: #ffffff;
-  margin-top: 41px;
-  text-align: center;
+  font-weight: 200;
+  font-size: 15px;
 }
 
 .pos-venda {
+  display: flex;
+  margin: 80px 0;
   justify-content: center;
   align-items: center;
 }
 
 .pos-venda .pos-venda-img img {
   width: 100%;
+  max-width: 1220px;
+  height: auto;
   object-fit: cover;
   object-position: center center;
 }
 
 .pos-venda .pos-venda-img {
-  margin: 80px 350px;
-  background-color: #FAFAFA;
-  border: 1px solid #E4E4E4;
+  background-color: #fafafa;
+  border: 1px solid #e4e4e4;
 }
 
-.pos-venda .pos-venda-img .pos-venda-text {
-  padding: 42px 50px;
+.pos-venda .pos-venda-text button {
+  width: 180px;
+  height: 50px;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.pos-venda .pos-venda-img .pos-venda-text p {
-  display: flex;
-  flex-flow: column wrap ;
-  margin-top: 10px;
-  width: 540px;
+.pos-venda .pos-venda-text {
+  padding: 42px 0;
+  justify-self: center;
+  max-width: 1115px;
 }
+
+.pos-venda .pos-venda-text p {
+  color: #484d51;
+  font-weight: 400;
+}
+
 
 .conheca-mais {
   width: 100%;
@@ -236,3 +305,253 @@ header nav #Lupa-Header {
   display: flex;
   color: white;
 }
+
+.conheca-mais h2 {
+  font-weight: 500;
+  max-width: 500px;
+  width: 100%;
+}
+
+.conheca-mais .quebra-parag {
+  display: flex;
+  margin-top: 30px;
+}
+
+.conheca-servicos {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.conheca-servicos h2 {
+  text-align: center;
+  justify-self: center;
+  margin-bottom: 35px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.conheca-servicos h3 {
+  font-weight: 500;
+  text-transform: none;
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.conheca-servicos a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contato {
+  background-color: #fafafa;
+  height: 620px;
+}
+
+.contato h2 {
+  width: 100%;
+  max-width: 375px;
+  margin-top: 105px;
+  font-weight: 600;
+}
+.contato p {
+  width: 100%;
+  max-width: 335px;
+}
+
+.contato form {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  max-width: 695px;
+  height: 500px;
+  padding: 38px 52px;
+  margin-top: 62px;
+}
+
+.contato form h3 {
+  text-transform: none;
+  color: #ffffff;
+}
+
+.contato form label {
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+.contato form input {
+  padding: 8px;
+  font-size: 14px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.contato form select {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+}
+
+.contato .form-row {
+  display: flex;
+  gap: 33px;
+}
+
+.contato .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contato form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 64px;
+}
+
+.contato form .btn-check-sub {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato form button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 34px;
+  margin-top: 54px;
+  background-color: #ffffff;
+}
+
+footer {
+  height: 412px;
+  width: 100%;
+}
+
+footer .footer-img {
+  height: 335px;
+  width: 100%;
+  background-image: url(/atratis/lexus/pics/footer/back.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+footer .footer-img .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-img .redes .caixa-red {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ffffff;
+  margin-left: 85px;
+  max-width: 310px;
+  width: 100%;
+}
+
+footer .navegue h3 {
+  text-transform: none;
+  font-weight: 400;
+}
+
+footer .navegue .list-naveg {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+footer .navegue .list-naveg .list-gap {
+  margin-right: 35px;
+}
+
+footer .navegue .list-naveg ul li {
+  height: 30px;
+}
+
+footer .endereco {
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  justify-self: flex-end;
+}
+
+footer .endereco h3 {
+  text-transform: none;
+}
+
+footer .endereco p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+footer .endereco .maps {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  width: 165px;
+}
+
+footer .lgpd {
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  justify-self: flex-end;
+}
+
+footer .lgpd ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+footer .lgpd ul li {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 200px;
+}
+
+footer .termos-priv {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  width: 170px;
+  height: 45px;
+}
+
+footer .footer-bottom {
+  margin-top: 28px;
+}
+
+footer #new-logo {
+  display: flex;
+  width: 100%;
+  max-width: 138px;
+  height: 28px;
+  object-fit: contain;
+}
+
+
+
