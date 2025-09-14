@@ -70,3 +70,10 @@ function filterCars(type, clickedBtn) {
   // Substitui os slides no carrossel
   $('.owl-carros').trigger('replace.owl.carousel', [filteredHTML.join('')]).trigger('refresh.owl.carousel');
 }
+
+const toggle = document.getElementById('menu-toggle');
+  const navWrapper = document.querySelector('.nav-wrapper');
+
+  toggle.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+  });
