@@ -530,14 +530,17 @@ footer .endereco h3 {
 footer .endereco p {
   font-size: 16px;
   font-weight: 200;
+  display: flex;
 }
 
-footer .endereco .maps {
+footer button {
   font-size: 16px;
   font-weight: 200;
   border: 1px solid #ffffff;
   padding: 8px 20px;
-  width: 165px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
 }
 
 footer .lgpd {
@@ -571,9 +574,11 @@ footer .termos-priv {
 
 footer .footer-bottom {
   margin-top: 28px;
+  display: flex;
+  justify-content:space-around;
 }
 
-footer #new-logo {
+footer .new-logo {
   display: flex;
   width: 100%;
   max-width: 138px;
