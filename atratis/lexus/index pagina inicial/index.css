@@ -197,6 +197,7 @@ header nav #Lupa-Header {
   background-size: cover;
   background-position: center;
   height: auto;
+  padding: 72px 0 76px;
 }
 
 .diferenciais-lexus #titulo-diferenciais {
@@ -210,15 +211,15 @@ header nav #Lupa-Header {
 }
 
 .grid-centro {
-  display: flex;
-  justify-content: center;
-}
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 235px);
-  column-gap: 13px; /* espaçamento entre as caixas */
-}
+  .grid-container {
+    width: 220px;
+  }
 
 .card {
   position: relative;
@@ -226,7 +227,6 @@ header nav #Lupa-Header {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-bottom: 75px;
   background-color: transparent;
 }
 
@@ -236,34 +236,35 @@ header nav #Lupa-Header {
   object-fit: cover;
   display: block;
 }
-
-/* Linha vertical entre imagem e título */
+ 
 .vertical-line {
   position: absolute;
-  top: 200px; /* fim da imagem */
-  height: 80px; /* até o fim do título */
+  top: 200px; 
+  height: 80px; 
   width: 1px;
   background-color: #ffffff;
 }
 
+
 /* Título com margin-top de 30px e afastado 18px da linha */
 .card h3 {
-  margin-top: 30px;
-  margin-bottom: 0;
-  text-align: center;
+  align-items: center;
+  text-align: left;
   font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   width: 100%;
   min-height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 18px;
+  padding-top: 14px;
+  text-transform: none;
+  font-weight: 500;
 }
 
 /* Parágrafo 40px abaixo do título */
-.card p {
-  margin-top: 40px;
+.grid-container p {
   font-size: 15px;
   color: #ffffff;
   font-weight: 200;
@@ -272,7 +273,6 @@ header nav #Lupa-Header {
   min-height: 60px;
   padding-left: 18px;
   display: flex;
-  align-items: flex-start;
 }
 
 
@@ -573,8 +573,10 @@ footer .termos-priv {
 }
 
 footer .footer-bottom {
-  margin-top: 28px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   display: flex;
+  text-align: center;
   justify-content:space-around;
 }
 
@@ -585,6 +587,7 @@ footer .new-logo {
   height: 28px;
   object-fit: contain;
 }
+
 
 
 

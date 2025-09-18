@@ -44,13 +44,20 @@ header #menu-logger {
   header nav {
     flex-direction: column; /* empilha logo e menu */
     align-items: center;
+    gap: 10px;
   }
 
   header nav ul {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+
+    & li{
+      margin-bottom: 15px;
+    }
   }
+
+  
 
   nav ul li a {
     margin: 10px 0;
@@ -196,6 +203,41 @@ header #menu-logger {
     margin: 10px 0;
   }
 
+
+
+.swiper-container {
+  width: 100%;
+  
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.grid-container, .card {
+  width: 100%;
+}
+
+.grid-container .card h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+}
+
+.vertical-line {
+  position: absolute;
+  top: 200px; 
+  height: 220px; 
+  width: 1px;
+  background-color: #ffffff;
+}
+
+
+
   .contato h2 {
     margin: 0 auto;
     padding-top: 50px;
@@ -232,9 +274,10 @@ header #menu-logger {
   }
 
   .contato form select {
-    width: auto;
+    width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding: 8px;
   }
 
   .contato form .checkbox {
@@ -366,4 +409,5 @@ footer .lgpd ul li {
     margin-top: 10px;
 }
 }
+
 

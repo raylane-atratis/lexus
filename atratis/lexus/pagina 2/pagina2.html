@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!--link do bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <!--css da pagina-->
+    <link rel="stylesheet" href="/atratis/lexus/index pagina inicial/reset.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Lexus Fortaleza</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-12 header-mobile">
+                    <div id="logo">
+                        <img src="/atratis/lexus/pics/navbar/lexus-logo.png  " alt="lexus-logo"
+                            id="Lexus-Logo-Header" />
+                    </div>
+                </div>
+                <div class="col-lg-10 col-12 nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Modelos</a></li>
+                            <li><a href="#">Seminovos</a></li>
+                            <li><a href="#">Institucional</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Pós-venda</a></li>
+                            <li><a href="#">Notícias</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+
+                        <a href="#" class="btn-padrao">Solicite Proposta</a>
+                        <div id="lupa-dad">
+                            <img src="/atratis/lexus/pics/navbar/lupa.png" alt="procurar" id="Lupa-Header" />
+                            <div id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 16 16">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+                                </svg></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="menu-localizacao">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Inicial <span> > </span> Modelos</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="carrossel">
+        <div class="Carrossel-Topo">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12">
+                        <div id="h2-carrossel">
+                            <h2 style="font-weight: 600">Descubra o Lexus</h2>
+                            <h2 style="font-weight: 100">que traduz o seu estilo</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 bnt-topo-responsivo">
+                        <div id="bnt-topo-carrossel">
+                            <button class="tab-btn active" onclick="filterCars('all', this)">Todos</button>
+                            <button class="tab-btn" onclick="filterCars('suv', this)">Suv</button>
+                            <button class="tab-btn" onclick="filterCars('seda', this)">Sedã</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Carrossel-img">
+                    <div class="owl-carousel owl-carros owl-theme">
+
+                        <div class="item suv">
+                            <h3>UX</h3>
+                            <p>UX 300h</p>
+                            <img src="/atratis/lexus/pics/section-carrosel/carrosel/suv/Imagem.png" alt="">
+                            <p>Crossover Compacto de Luxo</p>
+                            <div class="btn-carrossel">
+                                <button>Saiba mais</button>
+                            </div>
+                        </div>
+
+                        <div class="item suv">
+                            <h3>NX</h3>
+                            <p>NX 350h <span>F-Sport</span></p>
+                            <img src="/atratis/lexus/pics/section-carrosel/carrosel/suv/carro-azul.png" alt="">
+                            <p>SUV édio de Luxo</p>
+                            <div class="btn-carrossel">
+                                <button>Saiba mais</button>
+                            </div>
+                        </div>
+
+                        <div class="item suv">
+                            <h3>NX</h3>
+                            <p>NX 450h</p>
+                            <img src="/atratis/lexus/pics/section-carrosel/carrosel/suv/carro-verde.png" alt="">
+                            <p>SUV Médio de Luxo</p>
+                            <div class="btn-carrossel">
+                                <button>Saiba mais</button>
+                            </div>
+                        </div>
+
+                        <div class="item suv">
+                            <h3>NX</h3>
+                            <p>RX 500h <span>F-Sport</span> </p>
+                            <img src="/atratis/lexus/pics/section-carrosel/carrosel/suv/rx-branco.png" alt="">
+                            <p>SUV Grande de Luxo</p>
+                            <div class="btn-carrossel">
+                                <button>Saiba mais</button>
+                            </div>
+                        </div>
+
+                        <div class="item seda">
+                            <h3>ES</h3>
+                            <p>ES 300h</p>
+                            <img src="/atratis/lexus/pics/section-carrosel/carrosel/seda/seda-png.png" alt=""
+                                height="100% ">
+                            <p>SEDÃ de luxo</p>
+                            <div class="btn-carrossel">
+                                <button>Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery (necessário) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js.js"></script>
+
+    <footer>
+        <div class="footer-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-12">
+                        <div class="logo">
+                            <img src="/atratis/lexus/pics/footer/logo/Logo.png" alt="">
+                            <div class="redes">
+                                <div class="caixa-red">
+                                    <div class="fundo"></div>
+                                    <a href=""><img src="/atratis/lexus/pics/footer/logo/insta.png" alt=""></a>
+                                </div>
+                                <div class="caixa-red">
+                                    <div class="fundo"></div>
+                                    <a href=""><img src="/atratis/lexus/pics/footer/logo/face.png" alt=""></a>
+                                </div>
+                                <div class="caixa-red">
+                                    <div class="fundo"></div>
+                                    <a href=""><img src="/atratis/lexus/pics/footer/logo/ytb.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="navegue">
+                            <h3>Navegue por:</h3>
+                            <div class="list-naveg">
+                                <ul class="list-gap">
+                                    <li>Modelos</li>
+                                    <li>Institucional</li>
+                                    <li>Serviços</li>
+                                    <li>Peças e acessórios</li>
+                                </ul>
+                                <ul>
+                                    <li>Semi Novos</li>
+                                    <li>Notícias</li>
+                                    <li>Ouvidoria</li>
+                                    <li>Solicite Proposta</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 endereco-pai">
+                        <div class="endereco">
+                            <h3>Endereço</h3>
+                            <p>Av Rogaciano Leite, Nº 323, Fortaleza, Brasil</p>
+                            <button>
+                                <img src="/atratis/lexus/pics/footer/logo/maps.png" alt=""> Ver no mapa
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 termos">
+                        <div class="lgpd">
+                            <h3>lgpd</h3>
+                            <ul>
+                                <li>Política de privacidade</li>
+                                <li>Termos de uso</li>
+                            </ul>
+                            <button>
+                                <img src="/atratis/lexus/pics/footer/logo/zapzap.png" alt=""> Fale Conosco
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4 topo-new">
+                                <div class="logo-new">
+                                    <img src="/atratis/lexus/pics/footer/logo/logo-01 1.png">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="logo-atratis">
+                                    <img src="/atratis/lexus/pics/footer/logo/atratis-logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

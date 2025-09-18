@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+
+header {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  padding: 22px 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: auto;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav #lupa-dad {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav #Lupa-Header {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-localizacao {
+    padding: 13px 0 3px;
+    border: 1px solid #CAD1EB;
+  }
+
+  .menu-localizacao span {
+    color: #88898C;
+    width: 2px;
+    height: 1px;
+    margin: 0 9px;
+  }
+
+  .pos-venda {
+    background-color: #FAFAFA;
+    height: 115px;
+    padding: 33px 0 33px;
+  }
+
+  .pos-venda h2 {
+    font-weight: 500;
+  }
+
+  .contato {
+  background-color: #ffffff;
+  height: auto;
+}
+
+.contato h2 {
+  width: 100%;
+  max-width: 375px;
+  margin-top: 105px;
+  font-weight: 600;
+}
+.contato p {
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 20px;
+}
+
+.contato img {
+    padding-right: 10px;
+}
+
+.contato .maps-dad {
+    display: flex;
+    max-width: 300px;
+}
+
+.contato .maps-dad img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+
+
+.contato form {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  max-width: 695px;
+  height: auto;
+  padding: 38px 52px;
+  margin: 62px 0 62px;
+}
+
+.contato form h3 {
+  text-transform: none;
+  color: #ffffff;
+}
+
+.contato form label {
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+.contato form input {
+  padding: 8px;
+  font-size: 14px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.contato form #mensagem {
+  width: 590px;
+  height: 75px;
+  border-radius: 3px;
+}
+
+.contato .form-row {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.contato .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contato form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 64px;
+}
+
+.contato form .btn-check-sub {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato form button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 34px;
+  margin-top: 54px;
+  background-color: #ffffff;
+}
+
+.perguntas {
+    background-color: #FAFAFA;
+    padding: 62px 0 70px;
+}
+
+.perguntas h2 {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resposta {
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: sans-serif;
+  margin-bottom: 28px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resposta summary {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 36px 26px 36px 56px;
+  cursor: pointer;
+  list-style: none;
+  height: auto;
+}
+
+
+.resposta summary::-webkit-details-marker {
+  display: none;
+}
+
+.perguntas .resposta .topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perguntas .resposta .topo h4 {
+    text-transform: none;
+}
+
+.perguntas .resposta .topo .titulo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.perguntas .resposta .topo .titulo .controle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.controle .texto {
+  font-size: 0.9rem;
+}
+
+.controle .icone {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Estado aberto */
+.resposta[open] .texto::before {
+  content: "Fechar resposta";
+}
+
+.resposta[open] .icone::before {
+  content: "−";
+}
+
+/* Estado fechado */
+.resposta:not([open]) .texto::before {
+  content: "Mostrar resposta";
+}
+
+.resposta:not([open]) .icone::before {
+  content: "+";
+}
+
+.conteudo {
+  padding: 0 38px 27px 48px;
+  background-color: #ffffff;
+  color: #484D51;
+}
+
+/* Troca a imagem quando aberto */
+.resposta[open] .icone {
+  content: url("fechado.png");
+}
+
+
+footer {
+  height: auto;
+  width: auto;
+}
+
+footer .footer-img {
+  height: auto;
+  width: auto;
+  background-image: url(/atratis/lexus/pics/footer/back.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+footer .footer-img .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-img .redes .caixa-red {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ffffff;
+  margin-left: 85px;
+  max-width: 310px;
+  width: 100%;
+}
+
+footer .navegue h3 {
+  text-transform: none;
+  font-weight: 400;
+}
+
+footer .navegue .list-naveg {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+footer .navegue .list-naveg .list-gap {
+  margin-right: 35px;
+}
+
+footer .navegue .list-naveg ul li {
+  height: 30px;
+}
+
+footer .endereco {
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  justify-self: flex-end;
+}
+
+footer .endereco h3 {
+  text-transform: none;
+}
+
+footer .endereco p {
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+}
+
+footer button {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+footer .lgpd {
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  justify-self: flex-end;
+}
+
+footer .lgpd ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+footer .lgpd ul li {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 200px;
+}
+
+footer .termos-priv {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  width: 170px;
+  height: 45px;
+}
+
+footer .footer-bottom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  text-align: center;
+  justify-content:space-around;
+}
+
+footer .new-logo {
+  display: flex;
+  width: 100%;
+  max-width: 138px;
+  height: 28px;
+  object-fit: contain;
+}

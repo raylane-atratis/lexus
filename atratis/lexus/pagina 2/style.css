@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+
+header {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  padding: 22px 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: auto;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav #lupa-dad {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav #Lupa-Header {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-localizacao {
+    padding: 13px 0 3px;
+    border: 1px solid #CAD1EB;
+  }
+
+  .menu-localizacao span {
+    color: #88898C;
+    width: 2px;
+    height: 1px;
+    margin: 0 9px;
+  }
+
+.carrossel {
+  background-image: url(/atratis/lexus/pics/section-carrosel/Background2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.Carrossel-Topo {
+  display: flex;
+  padding-top: 74px;
+  height: 100%;
+}
+
+.Carrossel-Topo #h2-carrossel {
+  flex-direction: column;
+}
+
+.Carrossel-Topo button {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border: 1px solid #dfdfdf;
+}
+
+.carrossel .Carrossel-Topo #bnt-topo-carrossel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.carrossel .Carrossel-img {
+  display: flex;
+  margin-top: 95px;
+  width: 100%;
+}
+
+.carrossel .Carrossel-img h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.carrossel .Carrossel-img p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #484d51;
+}
+
+.carrossel .Carrossel-img span {
+  font-weight: 600;
+}
+
+.carrossel .Carrossel-img .item button {
+  display: flex;
+  max-width: 280px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.tab-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: black;
+  color: white;
+}
+
+.carrossel .Carrossel-img img {
+  width: 100%;
+  margin-bottom: 22px;
+  max-width: 280px;
+  height: 100%;
+  max-height: 125px;
+}
+
+footer {
+  height: auto;
+  width: auto;
+}
+
+footer .footer-img {
+  height: auto;
+  width: auto;
+  background-image: url(/atratis/lexus/pics/footer/back.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+footer .footer-img .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-img .redes .caixa-red {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ffffff;
+  margin-left: 85px;
+  max-width: 310px;
+  width: 100%;
+}
+
+footer .navegue h3 {
+  text-transform: none;
+  font-weight: 400;
+}
+
+footer .navegue .list-naveg {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+footer .navegue .list-naveg .list-gap {
+  margin-right: 35px;
+}
+
+footer .navegue .list-naveg ul li {
+  height: 30px;
+}
+
+footer .endereco {
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  justify-self: flex-end;
+}
+
+footer .endereco h3 {
+  text-transform: none;
+}
+
+footer .endereco p {
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+}
+
+footer button {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+footer .lgpd {
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  justify-self: flex-end;
+}
+
+footer .lgpd ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+footer .lgpd ul li {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 200px;
+}
+
+footer .termos-priv {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  width: 170px;
+  height: 45px;
+}
+
+footer .footer-bottom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content:space-around;
+}
+
+footer .new-logo {
+  display: flex;
+  width: 100%;
+  max-width: 138px;
+  height: 28px;
+  object-fit: contain;
+}
