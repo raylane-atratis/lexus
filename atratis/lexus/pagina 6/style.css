@@ -11,6 +11,10 @@ header {
   z-index: 999;
 }
 
+ header nav a:hover {
+    color: #fff;
+  }
+
 header #logo {
   display: flex;
   align-items: center;
@@ -71,6 +75,10 @@ header nav #Lupa-Header {
 .menu-localizacao {
     padding: 13px 0 3px;
     border: 1px solid #CAD1EB;
+  }
+
+  .menu-localizacao a {
+    color: inherit;
   }
 
   .menu-localizacao span {
@@ -306,4 +314,9 @@ footer .new-logo {
   max-width: 138px;
   height: 28px;
   object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
 }

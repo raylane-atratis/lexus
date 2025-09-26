@@ -1,0 +1,264 @@
+header #menu-logger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  header {
+    position: relative;
+    background-color: black;
+    padding: 12px 0;
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: center; /* centraliza logo */
+    align-items: center;
+    position: relative;
+  }
+
+  header nav {
+    flex-direction: column; /* empilha logo e menu */
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    & li{
+      margin-bottom: 15px;
+    }
+  }
+
+  nav ul li a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  header nav #lupa-dad {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  /* Esconde o menu por padrão */
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 12px 0;
+  }
+
+  /* Quando ativo, mostra o menu */
+  .nav-wrapper.active {
+    display: flex;
+  }
+  
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px; /* respeita o padding lateral */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+
+  /* Esconde o menu por padrão */
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 12px 0;
+  }
+
+  /* Quando ativo, mostra o menu */
+  .nav-wrapper.active {
+    display: flex;
+  }
+
+   header {
+    padding-bottom: 15px;
+  }
+
+  header nav ul li {
+    letter-spacing: 3px;
+    line-height: 3rem;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+   .pos-venda {
+    height: auto;
+  }
+
+  .menu-localizacao {
+    padding: 10px 5px;
+  }
+
+  .pos-venda h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .menu-localizacao p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .contato h2 {
+    margin-top: 30px;
+    font-size: 28px;
+    max-width: 100%;
+  }
+
+  .contato p {
+    font-size: 19px;
+    max-width: 100%;
+  }
+
+  .contato form {
+    padding: 24px 20px;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .contato .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contato input[type= "text"] {
+  margin-bottom: -20px;
+}
+
+  .contato .form-group {
+  margin-bottom: 20px;
+}
+
+.contato form .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+.contato form .btn-check-sub {
+    margin: 0 auto;
+    height: auto;
+     justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .contato form button {
+    width: 50%;
+    font-size: 15px;
+    padding: 12px;
+    margin-top: 20px;
+  }
+  
+  footer {
+  height: auto;
+ padding: 40px 0 0 0;
+}
+
+footer .logo {
+   justify-self: center;
+   margin-bottom: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  justify-self: center;
+  margin: 0 0 10px 0 !important;
+  font-weight: 500;
+}
+
+footer .navegue h3 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+}
+
+footer .navegue ul li {
+  font-size: 14px;
+}
+
+footer .endereco-pai {
+display: flex;
+justify-content: center;
+}
+
+footer .endereco {
+  text-align: center;
+}
+
+footer .termos {
+  display: flex;
+  justify-content: center;
+}
+
+footer .lgpd {
+  margin-top: 15px;
+  text-align: center;
+  
+}
+
+footer .lgpd ul li {
+  text-align: left;
+}
+
+
+  footer .footer-bottom {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-bottom .logo-new {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer .logo-atratis {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .img-footer {
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 590px) {
+  .contato form button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 730px) {
+ .contato form {
+   margin: 0 auto;
+   max-width: 70%;
+ }
+
+ .contato .form-topo {
+  margin-bottom: 20px;
+ }
+}

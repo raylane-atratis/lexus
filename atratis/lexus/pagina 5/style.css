@@ -10,6 +10,10 @@ header {
   z-index: 999;
 }
 
+header nav a:hover {
+  color: #fff;
+}
+
 header #logo {
   display: flex;
   align-items: center;
@@ -72,6 +76,10 @@ header nav #Lupa-Header {
   border: 1px solid #cad1eb;
 }
 
+.menu-localizacao a {
+  color: inherit;
+}
+
 .menu-localizacao span {
   color: #88898c;
   width: 2px;
@@ -90,8 +98,35 @@ header nav #Lupa-Header {
 }
 
 .conheca-servicos {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding: 60px 0;
+}
+
+.conheca-servicos-linha {
+  margin-bottom: 50px;
+}
+
+.conheca-servicos-caixa {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px; /* opcional, só pra suavizar os cantos */
+}
+
+.conheca-servicos-caixa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* dá profundidade */
+  z-index: 2;
+  position: relative;
+  padding: 15px;
+}
+
+.conheca-servicos .conheca-servicos-caixa a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.conheca-servicos .conheca-servicos-caixa span {
+  font-weight: 600;
 }
 
 .conheca-servicos h3 {
@@ -108,12 +143,24 @@ header nav #Lupa-Header {
   font-weight: 600;
 }
 
+.grupo-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.conheca-servicos-caixa {
+  flex: 0 0 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
 .topo-conheca {
   margin-top: 50px;
 }
 
 .contato {
-  background-color: #ffffff;
+  background-color: #fafafa;
   height: auto;
 }
 
@@ -138,6 +185,21 @@ header nav #Lupa-Header {
   margin-top: 62px;
   margin-bottom: 62px;
 }
+
+.contato form input::placeholder {
+  color: #999;
+}
+
+/* Estilo para o select quando está com o "placeholder" */
+select.placeholder {
+  color: #999;
+}
+
+/* Estilo normal quando uma opção é escolhida */
+select:not(.placeholder) {
+  color: #000;
+}
+
 
 .contato form h3 {
   text-transform: none;
@@ -202,20 +264,19 @@ header nav #Lupa-Header {
 
 @keyframes destaque-formulario {
   0% {
-    box-shadow: 0 0 0px #00c3ff;
+    box-shadow: 0 0 0px #000;
   }
   50% {
-    box-shadow: 0 0 20px #00c3ff;
+    box-shadow: 0 0 20px #000;
   }
   100% {
-    box-shadow: 0 0 0px #00c3ff;
+    box-shadow: 0 0 0px #000;
   }
 }
 
-
 .destaque {
   animation: destaque-formulario 1.5s ease-in-out 2;
-  border: 2px solid #00c3ff;
+  border: 2px solid #292a2b;
   border-radius: 8px;
 }
 
@@ -351,4 +412,9 @@ footer .new-logo {
   max-width: 138px;
   height: 28px;
   object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
 }

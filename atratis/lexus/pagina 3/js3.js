@@ -18,15 +18,6 @@ jQuery(".owl-banner-principal").owlCarousel({
   },
 });
 
-$(document).ready(function () {
-  $(".car-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: true,
-  });
-});
 
 jQuery(".owl-diferenciais").owlCarousel({
   loop: false,
@@ -42,11 +33,11 @@ jQuery(".owl-diferenciais").owlCarousel({
     600: {
       items: 2,
     },
-    800: {
-      items: 3,
+    800:  {
+      items:3,
     },
     1000: {
-      items: 5,
+      items:5,
     },
   },
 });
@@ -141,3 +132,41 @@ const secaoPotencia = document.querySelector(".potencia");
 if (secaoPotencia) {
   observer.observe(secaoPotencia);
 }
+
+function filterCars(tipo, btn) {
+  // Ativa o botão clicado
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const galeria = document.querySelector('.carros-in');
+  const imagens = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg'];
+
+  // Define o caminho das imagens
+  const caminho = tipo === 'interno' ? 'carro-in/' : 'carro-externo/';
+
+  // Atualiza a galeria
+  galeria.innerHTML = '';
+
+  imagens.forEach((img, i) => {
+    const item = document.createElement('div');
+    item.className = 'item';
+    item.innerHTML = `<img src="${caminho}${img}" alt="Carro ${i + 1}">`;
+    galeria.appendChild(item);
+  });
+}
+
+// Garante que o botão "Interno" esteja ativo ao carregar
+document.addEventListener('DOMContentLoaded', function() {
+  const botaoInterno = document.querySelector('.tab-btn.active');
+  filterCars('interno', botaoInterno);
+});
+
+
+const toggle = document.getElementById('menu-toggle');
+  const navWrapper = document.querySelector('.nav-wrapper');
+
+  toggle.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+  });
+
+

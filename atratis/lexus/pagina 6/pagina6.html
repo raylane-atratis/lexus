@@ -9,51 +9,46 @@
     <!--link do css principal-->
     <link rel="stylesheet" href="/atratis/lexus/index pagina inicial/reset.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
     <title>Lexus Fortaleza</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-12 header-mobile">
-                    <div id="logo">
-                        <img src="/atratis/lexus/pics/navbar/lexus-logo.png  " alt="lexus-logo"
-                            id="Lexus-Logo-Header" />
-                    </div>
-                    <div id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                            viewBox="0 0 16 16">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
-                        </svg></div>
-                </div>
-                <div class="col-lg-10 col-12 nav-wrapper">
-                    <nav>
-                        <ul>
-                            <li><a href="/atratis/lexus/pagina secundaria/pagina2.html">Modelos</a></li>
-                            <li><a href="#">Seminovos</a></li>
-                            <li><a href="#">Institucional</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Pós-venda</a></li>
-                            <li><a href="#">Notícias</a></li>
-                            <li><a href="#">Contatos</a></li>
-                        </ul>
-
-                        <a href="#" class="btn-padrao">Solicite Proposta</a>
-                        <div id="lupa-dad">
-                            <img src="/atratis/lexus/pics/navbar/lupa.png" alt="procurar" id="Lupa-Header" />
-                        </div>
-                    </nav>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-12 header-mobile">
+          <div id="logo">
+           <a href="/atratis/lexus/index pagina inicial/index.html"> <img src="/atratis/lexus/pics/navbar/lexus-logo.png  " alt="lexus-logo" id="Lexus-Logo-Header" /> </a>
+          </div>
+          <div id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg></div>
         </div>
-    </header>
+        <div class="col-lg-10 col-12 nav-wrapper">
+          <nav>
+            <ul>
+              <li><a href="/atratis/lexus/pagina 2/pagina2.html">Modelos</a></li>
+              <li><a href="#">Seminovos</a></li>
+              <li><a href="/atratis/lexus/pagina 4/pagina4.html">Institucional</a></li>
+              <li><a href="/atratis/lexus/pagina 5/pagina5.html">Serviços</a></li>
+              <li><a href="/atratis/lexus/pagina 6/pagina6.html">Pós-venda</a></li>
+              <li><a href="/atratis/lexus/pagina 7/pagina7.html">Notícias</a></li>
+              <li><a href="/atratis/lexus/pagina 9/pagina9.html">Contatos</a></li>
+            </ul>
 
+            <a href="#" class="btn-padrao">Solicite Proposta</a>
+            <div id="lupa-dad">
+              <img src="/atratis/lexus/pics/navbar/lupa.png" alt="procurar" id="Lupa-Header" />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
     <div class="menu-localizacao">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Inicial <span> > </span> Pós-venda</p>
+                    <p><a href="/atratis/lexus/index pagina inicial/index.html">Inicial</a> <span> > </span> Pós-venda</p>
                 </div>
             </div>
         </div>
@@ -85,22 +80,22 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
+                <input type="text" id="nome" name="nome" placeholder="Nome completo">
               </div>
               <div class="form-group">
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone">
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
               </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" placeholder="Digite seu email">
             </div>
 
             <label for="escolha-de-modelo">Escolha o modelo</label> <br>
             <select name="modelos">
-              <option value=""></option>
+              <option  disabled selected hidden value=""></option>
               <option value="SUV">SUV</option>
               <option value="Sedã">Sedã</option>
             </select>
@@ -124,6 +119,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="index.js"></script>
+    <script>
+        function filterCars(type, clickedBtn) {
+  // Atualiza botões ativos
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  clickedBtn.classList.add('active');
+
+  // Filtra os slides
+  const filteredHTML = allItemsHTML.filter(html => {
+    return type === 'all' || html.includes(`class="item ${type}"`) || html.includes(`class="item ${type} `);
+  });
+
+  // Substitui os slides no carrossel
+  $('.owl-carros').trigger('replace.owl.carousel', [filteredHTML.join('')]).trigger('refresh.owl.carousel');
+}
+
+const toggle = document.getElementById('menu-toggle');
+  const navWrapper = document.querySelector('.nav-wrapper');
+
+  toggle.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+  });
+
+    </script>
 
      <footer>
     <div class="footer-img">

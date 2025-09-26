@@ -71,6 +71,19 @@ header #menu-logger {
     height: auto;
   }
 
+  header {
+    padding-bottom: 15px;
+  }
+
+  header nav ul li {
+    letter-spacing: 3px;
+    line-height: 3rem;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+
 
   .banner-principal .content {
     display: flex;
@@ -94,6 +107,7 @@ header #menu-logger {
     display: flex;
     flex-direction: column; /* empilha título e botões */
     text-align: center; /* centraliza textos */
+     padding-top: -20px;
   }
 
   .Carrossel-Topo h2 {
@@ -126,6 +140,10 @@ header #menu-logger {
     margin: 0 auto 22px;
 }
 
+.carrossel .Carrossel-img {
+  margin-top: 25px;
+}
+
   .btn-carrossel {
     display: flex;
     justify-self: center;
@@ -155,19 +173,12 @@ header #menu-logger {
     display: flex;
   }
 
-  .pos-venda .pos-venda-text h3 {
-    margin: 0 auto;
-  }
-
   .pos-venda .pos-venda-text .pos-venda-p {
     flex-direction: column;
     gap: 10px;
     padding: 10px 15px;
   }
-
-  .pos-venda .pos-venda-text button {
-    margin: 0 auto;
-  }
+  
 
   .conheca-mais {
     height: auto;
@@ -207,7 +218,6 @@ header #menu-logger {
 
 .swiper-container {
   width: 100%;
-  
 }
 
 .swiper-slide {
@@ -231,12 +241,10 @@ header #menu-logger {
 .vertical-line {
   position: absolute;
   top: 200px; 
-  height: 220px; 
+  height: 200px; 
   width: 1px;
   background-color: #ffffff;
 }
-
-
 
   .contato h2 {
     margin: 0 auto;
@@ -266,7 +274,19 @@ header #menu-logger {
 
   .contato .form-row {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+}
+
+.contato #telefone {
+  margin-bottom: -10px;
+}
+
+.contato .form-group {
+  margin-bottom: 20px;
+}
+
+.contato input[type= "text"] {
+  margin-bottom: -20px;
 }
 
   .contato form input {
@@ -292,6 +312,7 @@ header #menu-logger {
     margin: 0 auto;
     height: auto;
     justify-self: center;
+    padding-top: 20px;
   }
 
   .contato form button {

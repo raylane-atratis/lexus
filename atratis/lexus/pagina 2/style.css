@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
 
-
 header {
   width: 100%;
   margin: 0;
@@ -9,6 +8,10 @@ header {
   position: relative;
   top: 0;
   z-index: 999;
+}
+
+header nav a:hover {
+  color: #fff;
 }
 
 header #logo {
@@ -65,20 +68,24 @@ header nav #Lupa-Header {
 }
 
 #menu-toggle {
-    display: none;
+  display: none;
 }
 
 .menu-localizacao {
-    padding: 13px 0 3px;
-    border: 1px solid #CAD1EB;
-  }
+  padding: 13px 0 3px;
+  border: 1px solid #cad1eb;
+}
 
-  .menu-localizacao span {
-    color: #88898C;
-    width: 2px;
-    height: 1px;
-    margin: 0 9px;
-  }
+.menu-localizacao a {
+  color: inherit;
+}
+
+.menu-localizacao span {
+  color: #88898c;
+  width: 2px;
+  height: 1px;
+  margin: 0 9px;
+}
 
 .carrossel {
   background-image: url(/atratis/lexus/pics/section-carrosel/Background2.jpg);
@@ -147,6 +154,28 @@ header nav #Lupa-Header {
   font-weight: 400;
   color: #ffffff;
   background-color: #000000;
+}
+
+.Carrossel-img a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.suv,
+.seda {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px; /* opcional, só pra suavizar os cantos */
+}
+
+.suv:hover,
+.seda:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  color: inherit;
+  font-style: normal;
+  position: relative;
+  padding: 15px;
 }
 
 .tab-btn {
@@ -293,7 +322,8 @@ footer .footer-bottom {
   margin-top: 24px;
   margin-bottom: 24px;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
+  text-align: center;
 }
 
 footer .new-logo {
@@ -302,4 +332,9 @@ footer .new-logo {
   max-width: 138px;
   height: 28px;
   object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
 }

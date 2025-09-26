@@ -1,0 +1,362 @@
+header #menu-logger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+  header {
+    position: relative;
+    background-color: black;
+    padding: 12px 0;
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: center; /* centraliza logo */
+    align-items: center;
+    position: relative;
+  }
+
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px; /* respeita o padding lateral */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+
+  /* Esconde o menu por padrão */
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 12px 0;
+  }
+
+  /* Quando ativo, mostra o menu */
+  .nav-wrapper.active {
+    display: flex;
+  }
+
+  header nav {
+    flex-direction: column; /* empilha logo e menu */
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    & li {
+      margin-bottom: 15px;
+    }
+  }
+
+  nav ul li a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  header nav #lupa-dad {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: auto;
+  }
+
+   header {
+    padding-bottom: 15px;
+  }
+
+  header nav ul li {
+    letter-spacing: 3px;
+    line-height: 3rem;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+  .pos-venda {
+    height: auto;
+  }
+
+  .menu-localizacao {
+    padding: 10px 5px;
+  }
+
+  .pos-venda h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .menu-localizacao p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .trabalhe-conosco {
+    margin: 40px 0;
+  }
+
+  .trabalhe-conosco .row {
+    flex-direction: column;
+  }
+
+  .trabalhe-conosco .texto {
+    order: 1;
+  }
+
+  .trabalhe-conosco .texto,
+  .trabalhe-conosco img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .trabalhe-conosco .texto p {
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .trabalhe-conosco h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+   .trabalhe-conosco .imagem {
+    order: -1; /* move a imagem para cima */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .trabalhe-conosco img {
+    background-position: center center;
+  }
+
+  .nossa-cultura .titulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nossa-cultura .conteudo {
+    padding: 20px;
+  }
+
+  .nossa-cultura .caixa {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 28px;
+  }
+
+  .nossa-cultura .caixa h3 {
+    font-size: 35px;
+  }
+
+  .nossa-cultura .caixa p {
+    font-size: 18px;
+  }
+
+  .beneficios .box p {
+    max-width: none;
+  }
+
+ 
+
+  .equipe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .equipe .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipe .imagem {
+    order: -1; /* move a imagem para cima */
+    margin-bottom: 20px;
+  }
+
+  .equipe img {
+    width: 100%;
+    max-height: 40vw;
+    position: center center;
+  }
+
+  .equipe .conteudo {
+    order: 1;
+  }
+
+  .equipe .container-porco {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .equipe p {
+    margin: 16px 0 30px;
+  }
+
+  .equipe .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .equipe .texto {
+    margin-left: 10px;
+  }
+
+  .equipe .caixa-botao {
+    margin-left: 10px;
+  }
+
+  .equipe img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 0 0 0;
+  }
+
+  footer .logo {
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+
+  footer .navegue {
+  display: flex;
+  justify-self: center;
+  margin: 0 0 10px 0 !important;
+  font-weight: 500;
+}
+
+  footer .navegue h3 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  footer .navegue ul li {
+    font-size: 14px;
+  }
+
+  footer .endereco-pai {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .endereco {
+    text-align: center;
+  }
+
+  footer .termos {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .lgpd {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  footer .lgpd ul li {
+    text-align: left;
+  }
+
+  footer .footer-bottom {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-bottom .logo-new {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer .logo-atratis {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .img-footer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Entre 990px e 751px: 2 colunas, imagem ao lado */
+@media (max-width: 990px) and (min-width: 751px) {
+  .beneficios .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .beneficios .box {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* Abaixo de 750px: 1 coluna, imagem em cima */
+@media (max-width: 750px) {
+  .beneficios .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .beneficios .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+   .beneficios .box .texto-lateral {
+  position: relative;
+  padding-left: -30px; /* espaço para a imagem */
+}
+
+.beneficios h4{
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+  .beneficios p {
+    font-size: 28px;
+   
+    padding: 0 15px;
+  }
+}

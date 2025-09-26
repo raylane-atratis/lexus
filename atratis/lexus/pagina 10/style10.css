@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+.container-porco {
+  max-width: 1336px;
+  width: 100%;
+  font-family: "DM Sans";
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  padding: 22px 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+ header nav a:hover {
+    color: #fff;
+  }
+
+header #logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: auto;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav #lupa-dad {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav #Lupa-Header {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-localizacao {
+  padding: 13px 0 3px;
+  border: 1px solid #cad1eb;
+}
+
+.menu-localizacao a {
+  color: inherit;
+}
+
+.menu-localizacao span {
+  color: #88898c;
+  width: 2px;
+  height: 1px;
+  margin: 0 9px;
+}
+
+.pos-venda {
+  background-color: #fafafa;
+  height: 115px;
+  padding: 33px 0 33px;
+}
+
+.pos-venda h2 {
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.trabalhe-conosco {
+  margin: 80px 0 80px;
+}
+
+.trabalhe-conosco img {
+  max-width:590px;
+  height: auto;
+  position: center center;
+}
+
+.trabalhe-conosco .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trabalhe-conosco h2 {
+  font-weight: 600;
+}
+
+.trabalhe-conosco p {
+  max-width: 438px;
+}
+
+.nossa-cultura {
+  background-color: black;
+  color: #ffffff;
+  height: auto;
+  padding: 45px 0 84px;
+}
+
+.nossa-cultura .titulo {
+  display: flex;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 4px;
+  margin-bottom: 35px;
+}
+
+.nossa-cultura .titulo .forte {
+  font-weight: 100;
+}
+
+.nossa-cultura .titulo h2 {
+  font-weight: 600;
+}
+
+.nossa-cultura .conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nossa-cultura .caixa {
+  flex: 1 1 calc(25% - 30px); /* 4 por linha com gap compensado */
+  min-width: 250px;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  align-items: center; /* centraliza o bloco h3 + p */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 235px;
+  padding: 42px;
+}
+
+.nossa-cultura .caixa h3 {
+  text-transform: none;
+  font-weight: 500;
+  text-align: left; /* alinha o texto do h3 à esquerda */
+  max-width: clamp(0, 30vw, 200px);
+  width: 100%; /* ocupa toda a largura do bloco */
+  margin-bottom: 10px;
+}
+
+.nossa-cultura .caixa p {
+  margin: 0 auto;
+}
+
+.beneficios {
+  padding: 53px 0 80px;
+}
+
+
+.beneficios .titulo h2 {
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 34px;
+}
+
+.beneficios .titulo span {
+  font-weight: 600;
+}
+.beneficios .box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.beneficios .texto-lateral {
+  position: relative;
+}
+
+.beneficios .box h4 {
+  position: relative;
+  padding-left: 30px; /* espaço pro ícone */
+  font-weight: 600;
+  text-transform: none;
+  display: inline-block;
+}
+
+.beneficios .box h4::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('sinal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.beneficios .box h4 {
+  text-transform: none;
+  font-weight: 600;
+}
+
+.beneficios .box p {
+  color: #484d51;
+  max-width: 280px;
+}
+
+
+.equipe .conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.equipe .col-6 {
+  padding: 0;
+}
+
+.equipe h2 {
+  max-width: 80%;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.equipe p {
+  font-size: clamp(20px,16px,16px);
+  max-width: 80%;
+  color: #484d51;
+}
+
+.equipe .conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  margin-left: 10px;
+  background-color: #fafafa;
+}
+
+.equipe .texto {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 68px;
+}
+
+.equipe .caixa-botao {
+  width: auto;
+  margin-left: 68px;
+}
+
+.equipe button {
+  display: inline-block;
+}
+
+
+
+
+.equipe button {
+  background-color: #000;
+  color: #ffffff;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: transform 1s;
+  display: inline-block;
+  margin: 0;
+}
+
+.equipe button:hover {
+  transform: scale(1.07);
+}
+
+.equipe .imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: -56px;
+}
+
+.equipe .imagem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 110px;
+  height: auto;
+  width: auto;
+}
+
+footer .footer-img {
+  height: auto;
+  width: auto;
+  background-image: url(/atratis/lexus/pics/footer/back.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+footer .footer-img .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-img .redes .caixa-red {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ffffff;
+  margin-left: 85px;
+  max-width: 310px;
+  width: 100%;
+}
+
+footer .navegue h3 {
+  text-transform: none;
+  font-weight: 400;
+}
+
+footer .navegue .list-naveg {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+footer .navegue .list-naveg .list-gap {
+  margin-right: 35px;
+}
+
+footer .navegue .list-naveg ul li {
+  height: 30px;
+}
+
+footer .endereco {
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  justify-self: flex-end;
+}
+
+footer .endereco h3 {
+  text-transform: none;
+}
+
+footer .endereco p {
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+}
+
+footer button {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+footer .lgpd {
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  justify-self: flex-end;
+}
+
+footer .lgpd ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+footer .lgpd ul li {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 200px;
+}
+
+footer .termos-priv {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  width: 170px;
+  height: 45px;
+}
+
+footer .footer-bottom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+footer .new-logo {
+  display: flex;
+  width: 100%;
+  max-width: 138px;
+  height: 28px;
+  object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
+}

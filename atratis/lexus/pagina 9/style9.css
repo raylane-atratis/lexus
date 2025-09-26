@@ -11,6 +11,10 @@ header {
   z-index: 999;
 }
 
+ header nav a:hover {
+    color: #fff;
+  }
+
 header #logo {
   display: flex;
   align-items: center;
@@ -73,6 +77,10 @@ header nav #Lupa-Header {
     border: 1px solid #CAD1EB;
   }
 
+  .menu-localizacao a {
+    color: inherit;
+  }
+
   .menu-localizacao span {
     color: #88898C;
     width: 2px;
@@ -121,8 +129,6 @@ header nav #Lupa-Header {
     margin-right: 10px;
 }
 
-
-
 .contato form {
   background-color: #000000;
   color: #ffffff;
@@ -152,7 +158,7 @@ header nav #Lupa-Header {
 }
 
 .contato form #mensagem {
-  width: 590px;
+  width: 100%;
   height: 75px;
   border-radius: 3px;
 }
@@ -258,6 +264,11 @@ header nav #Lupa-Header {
   border-radius: 4px;
 }
 
+.resposta img {
+  width: 30px;
+  height: 28px;
+}
+
 /* Estado aberto */
 .resposta[open] .texto::before {
   content: "Fechar resposta";
@@ -284,7 +295,7 @@ header nav #Lupa-Header {
 
 /* Troca a imagem quando aberto */
 .resposta[open] .icone {
-  content: url("fechado.png");
+  content: url("fechado.svg");
 }
 
 
@@ -420,4 +431,9 @@ footer .new-logo {
   max-width: 138px;
   height: 28px;
   object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
 }

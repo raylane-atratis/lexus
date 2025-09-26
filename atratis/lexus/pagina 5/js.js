@@ -1,6 +1,6 @@
-jQuery(".owl-conheca-servicos").owlCarousel({
+jQuery(".owl-servicos").owlCarousel({
   loop: false,
-  margin: 0,
+  margin: 10,
   dots: true,
   nav: false,
   autoplay: false,
@@ -10,10 +10,17 @@ jQuery(".owl-conheca-servicos").owlCarousel({
       items: 1,
     },
     600: {
-      items: 1,
+      items: 2,
     },
     1000: {
       items:3,
     },
   },
 });
+
+const toggle = document.getElementById('menu-toggle');
+  const navWrapper = document.querySelector('.nav-wrapper');
+
+  toggle.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+  });

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
 
-
 header {
   width: 100%;
   margin: 0;
@@ -10,6 +9,10 @@ header {
   position: absolute;
   top: 0;
   z-index: 999;
+}
+
+header nav a:hover {
+  color: #fff;
 }
 
 header #logo {
@@ -63,6 +66,10 @@ header nav #Lupa-Header {
   width: 22px;
   height: 22px;
   margin-left: 22px;
+}
+
+#menu-toggle {
+  display: none;
 }
 
 .banner-principal .item {
@@ -189,6 +196,27 @@ header nav #Lupa-Header {
   max-height: 125px;
 }
 
+.Carrossel-img a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.suv,
+.seda {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px; /* opcional, só pra suavizar os cantos */
+}
+
+.suv:hover,
+.seda:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  color: inherit;
+  font-style: normal;
+  position: relative;
+  padding: 15px;
+}
 
 .diferenciais-lexus {
   background-image: linear-gradient(to left, #1d1d1d 50%, #000000b0 75%),
@@ -211,15 +239,15 @@ header nav #Lupa-Header {
 }
 
 .grid-centro {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-  .grid-container {
-    width: 220px;
-  }
+.grid-container {
+  width: 220px;
+}
 
 .card {
   position: relative;
@@ -236,15 +264,14 @@ header nav #Lupa-Header {
   object-fit: cover;
   display: block;
 }
- 
+
 .vertical-line {
   position: absolute;
-  top: 200px; 
-  height: 80px; 
+  top: 200px;
+  height: 80px;
   width: 1px;
   background-color: #ffffff;
 }
-
 
 /* Título com margin-top de 30px e afastado 18px da linha */
 .card h3 {
@@ -275,12 +302,24 @@ header nav #Lupa-Header {
   display: flex;
 }
 
-
 .pos-venda {
   display: flex;
   margin: 80px 0;
   justify-content: center;
   align-items: center;
+}
+
+.pos-venda h3 {
+  padding: 10px 15px;
+}
+
+.pos-venda a {
+  color: inherit;
+}
+
+.pos-venda a:hover {
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .pos-venda .pos-venda-img img {
@@ -294,6 +333,10 @@ header nav #Lupa-Header {
 .pos-venda .pos-venda-img {
   background-color: #fafafa;
   border: 1px solid #e4e4e4;
+}
+
+.butao-central {
+  padding: 10px 15px;
 }
 
 .pos-venda .pos-venda-text button {
@@ -311,14 +354,13 @@ header nav #Lupa-Header {
 
 .pos-venda .pos-venda-text .pos-venda-p {
   display: flex;
-  gap: 30px
+  gap: 30px;
 }
 
 .pos-venda .pos-venda-text p {
   color: #484d51;
   font-weight: 400;
 }
-
 
 .conheca-mais {
   width: 100%;
@@ -329,6 +371,10 @@ header nav #Lupa-Header {
   padding-top: 110px;
   display: flex;
   color: white;
+}
+
+.conheca-mais a {
+  text-decoration: none;
 }
 
 .conheca-mais h2 {
@@ -363,10 +409,29 @@ header nav #Lupa-Header {
   font-size: 28px;
 }
 
+.conheca-servicos-caixa {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 12px; /* opcional, só pra suavizar os cantos */
+}
+
 .conheca-servicos a {
+  color: inherit;
+}
+
+.conheca-servicos .conheca-servicos-caixa a:hover {
   text-decoration: none;
-  color: #000000;
-  font-size: 16px;
+}
+
+.conheca-servicos-caixa:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.15); /* dá profundidade */
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.conheca-servicos .conheca-servicos-caixa span {
   font-weight: 600;
 }
 
@@ -465,7 +530,7 @@ footer .footer-img {
   background-image: url(/atratis/lexus/pics/footer/back.jpg);
   background-position: center center;
   background-size: cover;
-  padding-top: 85px;
+  padding-top: 55px;
   padding-bottom: 85px;
 }
 
@@ -577,7 +642,7 @@ footer .footer-bottom {
   margin-bottom: 24px;
   display: flex;
   text-align: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 footer .new-logo {
@@ -588,6 +653,7 @@ footer .new-logo {
   object-fit: contain;
 }
 
-
-
-
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
+}

@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+
+header {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  padding: 22px 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+ header nav a:hover {
+    color: #fff;
+  }
+
+header #logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: auto;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav #lupa-dad {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav #Lupa-Header {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-localizacao {
+    padding: 13px 0 3px;
+    border: 1px solid #CAD1EB;
+  }
+
+  .menu-localizacao a {
+    color: inherit;
+  }
+
+  .menu-localizacao span {
+    color: #88898C;
+    width: 2px;
+    height: 1px;
+    margin: 0 9px;
+  }
+
+  .pos-venda {
+    background-color: #FAFAFA;
+    height: 115px;
+    padding: 33px 0 33px;
+  }
+
+  .pos-venda h2 {
+    font-weight: 500;
+  }
+
+  .noticias {
+  padding: 80px 0 60px;
+}
+
+
+.conheca-servicos h3 {
+  font-weight: 500;
+  text-transform: none;
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.conheca-servicos a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.conheca-servicos {
+    margin-bottom:  45px;
+    max-width: 385px;
+}
+
+.noticias p {
+  font-weight: 400;
+}
+
+.noticias a {
+  text-decoration: none;
+}
+
+.conheca-servicos  {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.conheca-servicos:hover {
+  transform: scale(1.14);
+  z-index: 2;
+  position: relative;
+  padding: 15px;
+}
+
+
+.noticias .botao-pesquisa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 26px; /* corrigido */
+  height: 50px;
+  background-color: #FAFAFA;
+  color: #88898C;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px 1px #00000014;
+}
+
+.noticias .botao-pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+
+.noticias .navegue {
+  height: auto;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  padding: 27px 0 30px 25px;
+  margin: 32px 0; /* espaçamento acima e abaixo */
+}
+
+.noticias .navegue h4 {
+  text-transform: none;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.noticias .navegue ul {
+  margin: 0;
+  list-style-type: disc; /* bolinhas padrão */
+  list-style-position: inside; /* bolinhas ficam dentro da caixa */
+}
+
+.noticias .navegue li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.noticias .form {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 26px 20px 34px;
+  border-radius: 5px;
+}
+
+.noticias .form h4 {
+  font-weight: 500;
+  text-transform: none;
+}
+
+.noticias .form p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.noticias .form input[type="text"] {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 15px;
+  border-radius: 5px;
+  height: 46px;
+}
+
+.noticias .form input[type="checkbox"] {
+  margin-top: 6px;
+}
+
+.noticias .form .politicas-priv {
+ font-weight: 300;
+}
+
+.noticias .form button {
+  margin-top: 11px;
+  padding: 11px 0;
+   font-weight: 500;
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  transition: transform 1.2s;
+}
+
+.noticias .form button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  font-weight: 550;
+}
+
+.noticias .linha {
+  width: 100%;
+  margin: 44px 0 60px;
+   border: 1px solid #00000014;
+}
+
+  footer {
+  height: auto;
+  width: auto;
+}
+
+footer .footer-img {
+  height: auto;
+  width: auto;
+  background-image: url(/atratis/lexus/pics/footer/back.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+footer .footer-img .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-img .redes .caixa-red {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ffffff;
+  margin-left: 85px;
+  max-width: 310px;
+  width: 100%;
+}
+
+footer .navegue h3 {
+  text-transform: none;
+  font-weight: 400;
+}
+
+footer .navegue .list-naveg {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+footer .navegue .list-naveg .list-gap {
+  margin-right: 35px;
+}
+
+footer .navegue .list-naveg ul li {
+  height: 30px;
+}
+
+footer .endereco {
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  justify-self: flex-end;
+}
+
+footer .endereco h3 {
+  text-transform: none;
+}
+
+footer .endereco p {
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+}
+
+footer button {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+footer .lgpd {
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  justify-self: flex-end;
+}
+
+footer .lgpd ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+footer .lgpd ul li {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 200px;
+}
+
+footer .termos-priv {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  width: 170px;
+  height: 45px;
+}
+
+footer .footer-bottom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  text-align: center;
+  justify-content:space-around;
+}
+
+footer .new-logo {
+  display: flex;
+  width: 100%;
+  max-width: 138px;
+  height: 28px;
+  object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
+}
