@@ -1,0 +1,195 @@
+/* home.css - Estilos específicos da home */
+/* Header especial da home */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+
+header .btn-padrao {
+  text-transform: none;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Banner principal home */
+.banner-principal .item {
+  background-image: url(../../pics/navbar/carro.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.banner-principal .item:hover .content {
+  padding-bottom: 100px;
+}
+
+.banner-principal .item h1 {
+  color: white;
+  max-width: 398px;
+  width: 100%;
+}
+
+.banner-principal .item p {
+  color: white;
+  max-width: 412px;
+  width: 100%;
+}
+
+.banner-principal .item .content {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 90px;
+  transition: all 1s ease-in-out;
+}
+
+/* Carrossel home */
+.carrossel .Carrossel-Topo #bnt-topo-carrossel {
+  justify-content: space-evenly;
+}
+
+.suv:hover, .seda:hover {
+  transform: scale(1.03);
+  padding: 0;
+}
+
+/* Seção Pós-venda home */
+.pos-venda-home {
+  display: flex;
+  margin: 80px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.pos-venda-home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pos-venda-home a:hover {
+  text-decoration: none;
+}
+
+.pos-venda-home .pos-venda-img img {
+  width: 100%;
+  max-width: 1220px;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.pos-venda-home .pos-venda-img {
+  background-color: #fafafa;
+  border: 1px solid #e4e4e4;
+}
+
+.pos-venda-home .pos-venda-text button {
+  width: 180px;
+  height: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.pos-venda-home .pos-venda-text {
+  padding: 42px 0;
+  justify-self: center;
+  max-width: 1115px;
+}
+
+.pos-venda-home .pos-venda-text .pos-venda-p {
+  display: flex;
+  gap: 30px;
+}
+
+.pos-venda-home .pos-venda-text p {
+  color: #484d51;
+  font-weight: 400;
+}
+
+/* Conheça mais home */
+.conheca-mais {
+  width: 100%;
+  height: 565px;
+  background-image: url(../../pics/carro-p-seção-de-saiba-mais.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 110px;
+  display: flex;
+  color: white;
+}
+
+.conheca-mais a {
+  text-decoration: none;
+}
+
+.conheca-mais h2 {
+  font-weight: 500;
+  max-width: 500px;
+  width: 100%;
+}
+
+.conheca-mais p {
+  display: flex;
+  gap: 18px;
+  font-weight: 200;
+}
+
+/* Conheça serviços home */
+.conheca-servicos-home {
+  margin: 80px 0;
+}
+
+.conheca-servicos-home h2 {
+  text-align: center;
+  justify-self: center;
+  margin-bottom: 35px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.conheca-servicos-home h3 {
+  font-weight: 500;
+  text-transform: none;
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.conheca-servicos-caixa {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+.conheca-servicos-home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.conheca-servicos-home .conheca-servicos-caixa a:hover {
+  text-decoration: none;
+}
+
+.conheca-servicos-caixa:hover {
+  transform: scale(0.95);
+  z-index: 2;
+  position: relative;
+}
+
+.conheca-servicos-home .conheca-servicos-caixa span {
+  font-weight: 600;
+}
+
+.contato-home form .checkbox {
+  margin-top: 64px;
+}
+
+.contato-home form button {
+  margin-top: 54px;
+}

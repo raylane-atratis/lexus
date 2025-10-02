@@ -1,0 +1,1286 @@
+/* responsive.css - Responsividade Unificada para Todas as Páginas */
+
+/* ===== BREAKPOINTS ===== */
+/* 
+  xs: 0-575px   (extra small)
+  sm: 576-767px (small)  
+  md: 768-991px (medium)
+  lg: 992-1199px (large)
+  xl: 1200px+   (extra large)
+*/
+
+/* ===== RESPONSIVIDADE GLOBAL ===== */
+
+/* Header Mobile */
+@media screen and (max-width: 991px) {
+  header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 12px 0;
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Esconde o menu por padrão */
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 12px 0;
+  }
+
+  /* Quando ativo, mostra o menu */
+  .nav-wrapper.active {
+    display: flex;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  header nav #lupa-dad {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  header nav ul li {
+    letter-spacing: 3px;
+    line-height: 3rem;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-navegacao {
+    padding: 10px 0;
+  }
+
+  .breadcrumb-navegacao p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Títulos de páginas */
+  .cabecalho-pagina {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .cabecalho-pagina h1 {
+    font-size: 2rem;
+  }
+
+  .subtitulo-pagina {
+    font-size: 1rem;
+  }
+}
+
+/* responsive.css - ATUALIZAÇÃO PARA CARROSSEL E DIFERENCIAIS */
+
+/* ===== CORREÇÕES ESPECÍFICAS PARA CARROSSEL DE MODELOS ===== */
+@media screen and (max-width: 991px) {
+  .carrossel-modelos {
+    padding: 40px 0;
+  }
+
+  .carrossel-topo {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .carrossel-topo .titulo-carrossel {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .carrossel-topo .titulo-carrossel h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .filtros-carrossel {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .filtro-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-width: 80px;
+  }
+
+  .carrossel-conteudo {
+    margin-top: 40px;
+  }
+
+  /* Correção do alinhamento dos cards do carrossel */
+  .carrossel-conteudo .item {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .carrossel-conteudo .item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .carrossel-conteudo .versao {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+
+  .carrossel-conteudo img {
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .carrossel-conteudo .categoria {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .carrossel-conteudo .item button {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    margin-top: auto; /* Empurra o botão para baixo */
+  }
+
+  /* Ajuste específico para o Owl Carousel */
+  .owl-carousel .owl-stage {
+    display: flex;
+  }
+
+  .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+/* ===== CORREÇÕES PARA DIFERENCIAIS LEXUS ===== */
+@media screen and (max-width: 991px) {
+  .diferenciais-lexus {
+    padding: 40px 0;
+  }
+
+  .diferenciais-lexus #titulo-diferenciais {
+    padding-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .diferenciais-lexus #titulo-diferenciais h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Correção do grid de diferenciais */
+  .grid-centro {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .grid-container {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .vertical-line {
+    display: none; /* Remove a linha vertical em mobile */
+  }
+
+  .card h3 {
+    text-align: center;
+    padding-left: 0;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    min-height: auto;
+  }
+
+  .grid-container p {
+    text-align: center;
+    padding-left: 0;
+    justify-content: center;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+
+  /* Ajuste específico para o carousel de diferenciais */
+  .owl-diferenciais .owl-stage {
+    display: flex;
+  }
+
+  .owl-diferenciais .owl-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .owl-diferenciais .grid-container {
+    height: 100%;
+  }
+}
+
+/* ===== CORREÇÕES ESPECÍFICAS PARA O COMPORTAMENTO DO OWL CAROUSEL ===== */
+@media screen and (max-width: 991px) {
+  .owl-carousel .owl-nav,
+  .owl-carousel .owl-dots {
+    margin-top: 20px;
+  }
+
+  .owl-carousel .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 4px;
+  }
+
+  /* Garantir que os itens do carousel tenham altura consistente */
+  .owl-carousel .owl-item {
+    display: flex;
+  }
+
+  .owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* ===== MELHORIAS DE ALINHAMENTO GLOBAL ===== */
+@media screen and (max-width: 991px) {
+  /* Garantir que todos os containers estejam centralizados */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Melhorar espaçamento entre seções */
+  section {
+    margin: 0 auto;
+  }
+
+  /* Garantir que imagens sejam responsivas */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ===== CORREÇÃO PARA OS CARDS DO CARROSSEL MANTEREM ALINHAMENTO VERTICAL ===== */
+.carrossel-conteudo .item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.carrossel-conteudo .btn-carrossel {
+  margin-top: auto; /* Isso empurra o botão para o final do card */
+  padding-top: 15px;
+}
+
+/* ===== PÁGINA INICIAL - RESPONSIVIDADE ===== */
+@media screen and (max-width: 991px) {
+  /* Banner Principal */
+  .banner-principal .item {
+    height: 500px;
+  }
+
+  .banner-principal .item .content {
+    height: 500px;
+    padding-bottom: 60px;
+    align-items: left;
+    padding-left: 30px;
+  }
+
+  .banner-principal h1 {
+    font-size: 2rem;
+
+    max-width: 100%;
+  }
+
+  .banner-principal p {
+    max-width: 100%;
+  }
+
+  /* Carrossel de Modelos */
+  .carrossel-modelos {
+    padding: 40px 0;
+  }
+
+  .carrossel-topo {
+    padding-top: 0;
+  }
+
+  .carrossel-topo .titulo-carrossel {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .filtros-carrossel {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .carrossel-conteudo {
+    margin-top: 40px;
+  }
+
+  .carrossel-conteudo .item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Diferenciais Lexus */
+  .diferenciais-lexus {
+    padding: 40px 0;
+  }
+
+  .diferenciais-lexus #titulo-diferenciais {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .grid-centro {
+    gap: 20px;
+  }
+
+  .grid-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card h3,
+  .card p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  /* Seção Pós-Venda Home */
+  .pos-venda-home {
+    margin: 40px 0;
+  }
+
+  .pos-venda-home .pos-venda-text {
+    padding: 30px 0;
+  }
+
+  .pos-venda-home .pos-venda-p {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+
+  /* Conheça Mais */
+  .conheca-mais {
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .conheca-mais h2 {
+    text-align: left;
+  }
+
+  .conheca-mais p {
+    text-align: left;
+    margin: 15px auto;
+  }
+
+  /* Conheça Serviços Home */
+  .conheca-servicos-home {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .conheca-servicos-home h2 {
+    text-align: center;
+  }
+
+  .conheca-servicos-caixa {
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  /* Formulário Home */
+  .contato-home .form-topo {
+    text-align: center;
+    margin-bottom: 0 !important;
+    margin-top: 15px;
+  }
+
+  .contato-home h2 {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .contato-home p {
+    max-width: 100%;
+  }
+
+  .contato-home form {
+    margin: 0 auto 40px;
+    padding: 25px;
+  }
+}
+
+/* ===== FORMULÁRIOS - RESPONSIVIDADE GLOBAL ===== */
+@media screen and (max-width: 991px) {
+  .contato form,
+  .form-contato,
+  .contato-posvenda form {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .contato .form-row,
+  .form-contato .form-row,
+  .contato-posvenda .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contato .form-group,
+  .form-contato .form-group,
+  .contato-posvenda .form-group {
+    margin-bottom: 15px;
+  }
+
+  .contato form .btn-check-sub,
+  .form-contato .btn-check-sub,
+  .contato-posvenda form .btn-check-sub {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .contato form button,
+  .form-contato button,
+  .contato-posvenda form button {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contato form .checkbox,
+  .form-contato .checkbox,
+  .contato-posvenda form .checkbox {
+    margin-top: 0;
+  }
+}
+
+/* ===== PÁGINA 2 - MODELOS ===== */
+@media screen and (max-width: 991px) {
+  .carrossel-pagina2 .Carrossel-Topo #bnt-topo-carrossel {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* ===== PÁGINA 3 - DETALHES DO CARRO ===== */
+/* ===== PÁGINA 3 - DETALHES DO CARRO - RESPONSIVIDADE ===== */
+@media screen and (max-width: 991px) {
+  /* Banner Página 3 */
+  .banner-pagina3 .item {
+    height: 500px;
+  }
+
+  .banner-pagina3 .item .content {
+    height: 500px;
+    padding-bottom: 40px;
+    justify-content: flex-end;
+  }
+
+  .banner-pagina3 .item h1 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .banner-pagina3 .item p {
+    max-width: 100%;
+  }
+
+  /* Seção F-Sport */
+  .f-sport {
+    padding: 40px 0;
+    text-align: left;
+  }
+
+  .f-sport img {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .f-sport h2 {
+    font-size: 1.8rem;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .f-sport p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Seção Carro Interno/Externo */
+  .carro-in-ex .titulo-secao {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .carro-in-ex h2 {
+    max-width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .carro-in-ex .botoes-filtro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .carro-in-ex #bnt-topo-carro-in-ext {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .carros-in {
+    margin: 20px 0 50px;
+    gap: 15px;
+  }
+
+  .carros-in .item {
+    flex: 0 1 calc(50% - 15px);
+  }
+
+  /* Seção Potência */
+  .potencia {
+    padding: 40px 0;
+  }
+
+  .potencia .potencia-titulo {
+    text-align: center;
+  }
+
+  .potencia h2 {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+
+  .potencia .potencia-content {
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+
+  .potencia .potencia-content .conteudo {
+    align-items: center;
+    text-align: center;
+    padding: 0 !important;
+    border-left: none !important;
+  }
+
+  .potencia .potencia-content .separator {
+    display: none;
+  }
+
+  .potencia p {
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .potencia h3 {
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
+
+  /* Contadores */
+  .contador {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Banner Página 3 - Mobile */
+  .banner-pagina3 .item {
+    height: 400px;
+  }
+
+  .banner-pagina3 .item .content {
+    height: 400px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+
+  .banner-pagina3 .item h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner-pagina3 .item p {
+    font-size: 0.9rem;
+  }
+
+  /* Seção F-Sport - Mobile */
+  .f-sport {
+    padding: 30px 0;
+  }
+
+  .f-sport h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Filtro Carro In/Ex - Mobile */
+  .carro-in-ex #bnt-topo-carro-in-ext {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .carro-in-ex .filtro-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .carros-in .item {
+    flex: 0 1 100%;
+  }
+
+  /* Seção Potência - Mobile */
+  .potencia {
+    padding: 30px 0;
+  }
+
+  .potencia h2 {
+    font-size: 1.5rem;
+  }
+
+  .potencia h3 {
+    font-size: 1.2rem;
+  }
+
+  .contador {
+    font-size: 1.5rem;
+  }
+
+  /* Diferenciais Lexus - Mobile */
+  .diferenciais-lexus {
+    padding: 40px 0;
+  }
+
+  .diferenciais-lexus #titulo-diferenciais {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .diferenciais-lexus #titulo-diferenciais h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Formulário - Mobile */
+  .contato {
+    padding: 30px 0;
+  }
+
+  .contato .form-topo {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .contato h2 {
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .contato p {
+    max-width: 100%;
+  }
+
+  .contato form {
+    margin: 30px auto;
+    padding: 25px 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* Ajustes para telas muito pequenas */
+  .carros-in {
+    gap: 10px;
+  }
+
+  .potencia .potencia-content {
+    gap: 20px;
+  }
+}
+
+/* ===== CORREÇÕES ESPECÍFICAS PARA O FILTRO DE IMAGENS ===== */
+@media screen and (max-width: 991px) {
+  .carro-in-ex .filtros-carrossel {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .carro-in-ex .filtro-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-width: 100px;
+  }
+}
+
+/* ===== MELHORIAS DE PERFORMANCE PARA IMAGENS ===== */
+@media screen and (max-width: 991px) {
+  .carros-in .item img {
+    transition: none; /* Remove transições em mobile para melhor performance */
+  }
+
+  .carros-in .item:hover {
+    transform: none; /* Remove transform em hover para mobile */
+  }
+}
+
+/* ===== AJUSTES DE ACESSIBILIDADE PARA MOBILE ===== */
+@media screen and (max-width: 767px) {
+  .filtro-btn,
+  .btn-padrao {
+    min-height: 44px; /* Tamanho mínimo para toque */
+    padding: 12px 20px;
+  }
+
+  .carros-in .item {
+    margin-bottom: 10px;
+  }
+}
+
+/* ===== PÁGINA 4 - INSTITUCIONAL ===== */
+@media screen and (max-width: 991px) {
+  .containerA,
+  .containerB,
+  .containerC {
+    padding: 40px 0;
+    text-align: left;
+  }
+
+  .containerA img,
+  .containerB img,
+  .containerC img {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .containerA h2,
+  .containerB h2,
+  .containerC .texto1 h3,
+  .containerC .texto2 h3 {
+    max-width: 100%;
+  }
+
+  .containerA p,
+  .containerB p,
+  .containerC .texto1 p {
+    max-width: 100%;
+  }
+
+  .containerB .texto1 {
+    margin: 0;
+  }
+
+  .containerD .borda {
+    padding: 20px 0;
+  }
+}
+
+/* ===== PÁGINA 5 - SERVIÇOS ===== */
+@media screen and (max-width: 991px) {
+  .conheca-servicos-pagina5 {
+    padding: 40px 0;
+  }
+
+  .conheca-servicos-pagina5 .conheca-servicos-caixa {
+    margin: 10px 5px;
+    text-align: center;
+  }
+
+  .conheca-servicos-pagina5 .conheca-servicos-caixa h3 {
+    font-size: 24px;
+  }
+}
+
+/* ===== PÁGINA 6 - PÓS-VENDA ===== */
+@media screen and (max-width: 991px) {
+  .contato-posvenda {
+    padding: 40px 0;
+  }
+
+  .contato-posvenda .form-topo {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .contato-posvenda h2 {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .contato-posvenda p {
+    max-width: 100%;
+  }
+}
+
+/* ===== PÁGINA 7 - NOTÍCIAS ===== */
+@media screen and (max-width: 991px) {
+  .noticias-pagina7 {
+    padding: 40px 0;
+  }
+
+  .sidebar-noticias {
+    padding-left: 15px;
+    margin-top: 40px;
+  }
+
+  .card-noticia {
+    margin-bottom: 30px;
+  }
+
+  .card-noticia h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-conteudo {
+    padding: 20px;
+  }
+}
+
+/* ===== PÁGINA 8 - BLOG/ARTIGO ===== */
+@media screen and (max-width: 991px) {
+  .blog-pagina8 {
+    padding: 40px 0;
+  }
+
+  .sidebar-blog {
+    padding-left: 15px;
+    margin-top: 40px;
+  }
+
+  .info-topo-blog {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .autor-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .redes-compartilhamento {
+    justify-content: center;
+  }
+
+  .secao-destaque {
+    flex-direction: column;
+  }
+
+  .texto-destaque {
+    margin-bottom: 20px;
+  }
+
+  .secao-compartilhamento p {
+    text-align: center;
+  }
+}
+
+/* ===== PÁGINA 9 - CONTATOS ===== */
+@media screen and (max-width: 991px) {
+  .contato-pagina9 {
+    padding: 40px 0;
+  }
+
+  .contato-pagina9 .form-topo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contato-pagina9 h2 {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .contato-pagina9 .form-topo p {
+    max-width: 100%;
+  }
+
+  .contato-info {
+    text-align: center;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+
+  .perguntas-frequentes {
+    padding: 40px 0 60px;
+  }
+
+  .perguntas-frequentes h2 {
+    margin-bottom: 30px;
+  }
+
+  .faq-summary {
+    padding: 20px;
+  }
+
+  .faq-titulo {
+    font-size: 1rem;
+  }
+
+  .faq-conteudo {
+    padding: 0 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq-topo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .faq-controle {
+    align-self: flex-end;
+  }
+}
+
+/* ===== PÁGINA 10 - TRABALHE CONOSCO ===== */
+@media screen and (max-width: 991px) {
+  .trabalhe-conosco {
+    margin: 40px 0;
+  }
+
+  .trabalhe-conosco .row {
+    flex-direction: column;
+  }
+
+  .trabalhe-conosco .texto {
+    order: 1;
+  }
+
+  .trabalhe-conosco .texto,
+  .trabalhe-conosco img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .trabalhe-conosco .texto p {
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .trabalhe-conosco h2 {
+    margin-bottom: 10px;
+  }
+
+  .trabalhe-conosco .imagem {
+    order: -1; /* move a imagem para cima */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .trabalhe-conosco img {
+    background-position: center center;
+  }
+
+  .nossa-cultura .titulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nossa-cultura .conteudo {
+    padding: 20px;
+  }
+
+  .nossa-cultura .caixa {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 28px;
+  }
+
+  .beneficios .box p {
+    max-width: none;
+  }
+
+  .equipe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .equipe .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipe .imagem {
+    order: -1; /* move a imagem para cima */
+    margin-bottom: 20px;
+  }
+
+  .equipe img {
+    width: 100%;
+    max-height: 40vw;
+    position: center center;
+  }
+
+  .equipe .conteudo {
+    order: 1;
+  }
+
+  .equipe .container-porco {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .equipe p {
+    margin: 16px 0 30px;
+  }
+
+  .equipe .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 30px;
+  }
+
+  .equipe .texto {
+    margin-left: 10px;
+  }
+
+  .equipe button {
+    margin-left: 10px;
+  }
+
+  .equipe .caixa-botao {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipe img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== FOOTER - RESPONSIVIDADE GLOBAL ===== */
+@media screen and (max-width: 991px) {
+  footer {
+    height: auto;
+    padding: 40px 0 0 0;
+  }
+
+  footer .logo {
+    justify-self: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  footer .navegue {
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  footer .navegue h3 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  footer .navegue .list-naveg {
+    justify-content: center;
+  }
+
+  footer .navegue ul li {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  footer .endereco-pai {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  footer .endereco {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  footer .termos {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .lgpd {
+    margin-top: 15px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  footer .lgpd ul {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  footer .lgpd ul li {
+    text-align: center;
+  }
+}
+
+/* ===== UTILITÁRIOS RESPONSIVOS ===== */
+@media screen and (max-width: 767px) {
+  .container-porco,
+  .container {
+    padding: 0 15px;
+  }
+
+  .btn-padrao {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text-center-mobile {
+    text-align: center;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .flex-column-mobile {
+    flex-direction: column;
+  }
+}
+
+/* ===== AJUSTES ESPECÍFICOS PARA TELAS MUITO PEQUENAS ===== */
+@media screen and (max-width: 485px) {
+  .contato .form-row,
+  .form-contato .form-row,
+  .contato-posvenda .form-row {
+    gap: 10px;
+  }
+
+  .contato .form-group,
+  .form-contato .form-group,
+  .contato-posvenda .form-group {
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    line-height: 2.5rem;
+  }
+
+  header nav a {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== ORIENTAÇÃO LANDSCAPE ===== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .banner-principal .item {
+    height: 400px;
+  }
+
+  .banner-principal .item .content {
+    height: 400px;
+    padding-bottom: 20px;
+  }
+
+  header nav ul {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}

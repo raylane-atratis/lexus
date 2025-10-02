@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./fav-icobn.png" type="image/x-icon">
+  <!-- CSS do Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!--link do bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <!--link do css principal-->
+
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/home.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <title>Lexus Fortaleza</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-12 header-mobile">
+          <div id="logo">
+            <a href="./html-novo.html"> <img src="./pics/navbar/lexus-logo.png" alt="lexus-logo"
+                id="Lexus-Logo-Header" />
+            </a>
+          </div>
+          <div id="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-10 col-12 nav-wrapper">
+          <nav>
+            <ul>
+              <li><a href="./pagina2.html">Modelos</a></li>
+              <li><a href="#">Seminovos</a></li>
+              <li><a href="./pagina4.html">Institucional</a></li>
+              <li><a href="./pagina5.html">Serviços</a></li>
+              <li><a href="./pagina6.html">Pós-venda</a></li>
+              <li><a href="./pagina7.html">Notícias</a></li>
+              <li><a href="./pagina9.html">Contatos</a></li>
+            </ul>
+
+            <a href="#" class="btn-padrao">Solicite Proposta</a>
+            <div id="lupa-dad">
+              <img src="./pics/navbar/lupa.png" alt="procurar" id="Lupa-Header" />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner-principal">
+    <div class="owl-carousel owl-banner-principal owl-theme">
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="content">
+                <h1>O SUV que redefine luxo e performance</h1>
+                <p>
+                  Experimente o conforto de condução e desempenho refinado com
+                  o novo RX 500H.
+                </p>
+                <div class="botao-responsivo">
+                  <a href="./pagina2.html" class="btn-padrao">EXPLORE O RX</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="content">
+                <h1>O SUV que redefine luxo e performance</h1>
+                <p>
+                  Experimente o conforto de condução e desempenho refinado com
+                  o novo RX 500H.
+                </p>
+                <div class="botao-responsivo">
+                  <a href="#" class="btn-padrao">EXPLORE O RX</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Carrossel de Modelos -->
+  <section class="carrossel-modelos" aria-labelledby="titulo-carrossel-modelos">
+    <div class="carrossel-topo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="titulo-carrossel">
+              <h2 id="titulo-carrossel-modelos" style="font-weight: 600">Descubra o Lexus</h2>
+              <h2 style="font-weight: 100">que traduz o seu estilo</h2>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 botoes-filtro">
+            <div class="filtros-carrossel" role="tablist" aria-label="Filtrar modelos por categoria">
+              <button class="filtro-btn active" onclick="filterCars('all', this)" role="tab" aria-selected="true"
+                aria-controls="carrossel-modelos">
+                Todos
+              </button>
+              <button class="filtro-btn" onclick="filterCars('suv', this)" role="tab" aria-selected="false"
+                aria-controls="carrossel-modelos">
+                SUV
+              </button>
+              <button class="filtro-btn" onclick="filterCars('seda', this)" role="tab" aria-selected="false"
+                aria-controls="carrossel-modelos">
+                Sedã
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carrossel-conteudo">
+          <div class="owl-carousel owl-carros owl-theme" id="carrossel-modelos">
+            <div class="item suv">
+              <a href="./pagina2.html" class="card-modelo">
+                <h3>UX</h3>
+                <p class="versao">UX 300h</p>
+                <img src="./pics/section-carrosel/carrosel/suv/Imagem.png"
+                  alt="Lexus UX 300h - Crossover Compacto de Luxo" loading="lazy">
+                <p class="categoria">Crossover Compacto de Luxo</p>
+                <div class="btn-carrossel">
+                  <button>Saiba mais</button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item suv">
+              <a href="./pagina2.html" class="card-modelo">
+                <h3>NX</h3>
+                <p class="versao">NX 350h <span class="destaque">F-Sport</span></p>
+                <img src="./pics/section-carrosel/carrosel/suv/carro-azul.png"
+                  alt="Lexus NX 350h F-Sport - SUV Médio de Luxo" loading="lazy">
+                <p class="categoria">SUV Médio de Luxo</p>
+                <div class="btn-carrossel">
+                  <button>Saiba mais</button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item suv">
+              <a href="./pagina2.html" class="card-modelo">
+                <h3>NX</h3>
+                <p class="versao">NX 450h</p>
+                <img src="./pics/section-carrosel/carrosel/suv/carro-verde.png" alt="Lexus NX 450h - SUV Médio de Luxo"
+                  loading="lazy">
+                <p class="categoria">SUV Médio de Luxo</p>
+                <div class="btn-carrossel">
+                  <button>Saiba mais</button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item suv">
+              <a href="./pagina2.html" class="card-modelo">
+                <h3>RX</h3>
+                <p class="versao">RX 500h <span class="destaque">F-Sport</span></p>
+                <img src="./pics/section-carrosel/carrosel/suv/rx-branco.png"
+                  alt="Lexus RX 500h F-Sport - SUV Grande de Luxo" loading="lazy">
+                <p class="categoria">SUV Grande de Luxo</p>
+                <div class="btn-carrossel">
+                  <button>Saiba mais</button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item seda">
+              <a href="./pagina2.html" class="card-modelo">
+                <h3>ES</h3>
+                <p class="versao">ES 300h</p>
+                <img src="./pics/section-carrosel/carrosel/seda/seda-png.png" alt="Lexus ES 300h - Sedã de Luxo"
+                  loading="lazy">
+                <p class="categoria">Sedã de Luxo</p>
+                <div class="btn-carrossel">
+                  <button>Saiba mais</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="diferenciais-lexus">
+    <div id="titulo-diferenciais">
+      <h2>
+        <span style="font-weight: 100;">Conheça os </span><br> Diferenciais Lexus
+      </h2>
+      <div class="linha"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-diferenciais owl-theme">
+            <div class="grid-container">
+              <div class="card">
+                <img src="./pics/section-diferenciais/1 foto.jpg" alt="Lexus e Care">
+                <div class="vertical-line"></div>
+                <div class="espaco-h3">
+                  <h3>Lexus e Care</h3>
+                </div>
+                <p>Garantia estendida, assistência 24h e revisões com padrão Lexus.</p>
+              </div>
+            </div>
+            <div class="grid-container">
+              <div class="card">
+                <img src="./pics/section-diferenciais/foto2.jpg" alt="Desempenho">
+                <div class="vertical-line"></div>
+                <div class="espaco-h3">
+                  <h3>Desempenho</h3>
+                </div>
+                <p>Concentra-se mais no conforto e numa experiência de condução suave, embora tenha modelos orientados
+                  para o desempenho, como a série Lexus F.</p>
+              </div>
+            </div>
+            <div class="grid-container">
+              <div class="card">
+                <img src="./pics/section-diferenciais/foto3.jpg" alt="Tecnologia e Recursos">
+                <div class="vertical-line"></div>
+                <div class="espaco-h3">
+                  <h3>Tecnologia e Recursos</h3>
+                </div>
+                <p>Os veículos Lexus são reconhecidos por incorporarem tecnologia de ponta, combinando sofisticação.</p>
+              </div>
+            </div>
+            <div class="grid-container">
+              <div class="card">
+                <img src="./pics/section-diferenciais/foto4.jpg" alt="Design e Estética">
+                <div class="vertical-line"></div>
+                <div class="espaco-h3">
+                  <h3>Design e Estética</h3>
+                </div>
+                <p>Os veículos Lexus se destacam por oferecer uma combinação refinada de luxo, desempenho e inovação
+                  tecnológica com mais segurança e comodidade.</p>
+              </div>
+            </div>
+            <div class="grid-container">
+              <div class="card">
+                <img src="./pics/section-diferenciais/foto5.jpg" alt="Posição de mercado">
+                <div class="vertical-line"></div>
+                <div class="espaco-h3">
+                  <h3>Posição de mercado</h3>
+                </div>
+                <p>Compradores que buscam uma mistura de luxo, confiabilidade e tecnologia de ponta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pos-venda-home">
+    <div class="pos-venda-img">
+      <img src="./pics/section-pos-venda/Rectangle 110.jpg" alt="Pós-venda Lexus">
+      <div class="pos-venda-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 style="font-weight: 500; text-transform: none;">Pós-venda</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="pos-venda-p">
+                <p>
+                  Os acessórios e peças genuínas Lexus são desenvolvidos com os mais altos padrões de qualidade,
+                  oferecendo durabilidade, segurança e o melhor desempenho para seu veículo.
+                </p>
+                <p>A linha inclui itens essenciais e de personalização, como filtros, limpadores
+                  de para-brisa, tapetes, rodas, kits de segurança, frisos e óleo para motor, todos projetados para os
+                  modelos da marca.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 butao-central">
+              <a href="./pagina6.html"><button>Ver mais</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conheca-mais">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <h2> <span style="font-weight: 100;"> Confiança que Acompanha </span> <br> Você por 10 Anos</h2>
+          <p>A LexUS oferece 10 anos de garantia, reafirmando o compromisso com a qualidade,
+            durabilidade e excelência em cada detalhe. Mais do que tranquilidade, é a certeza de estar ao volante de um
+            veículo pensado para durar. </p>
+          <p>Essa garantia estendida abrange componentes importantes e valoriza ainda mais a
+            experiência Lexus — onde confiança, luxo e desempenho caminham juntos. </p>
+          <a href="./pagina10.html"><button class="btn-padrao">Saiba mais</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conheca-servicos-home">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 style="font-weight: 600;">conheça os serviços
+            <span style="font-weight: 100;"> <br> exclusivos para o seu lexus </span>
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="owl-carousel owl-conheca-servicos owl-theme">
+            <div class="conheca-servicos-caixa">
+              <a href="./pagina5.html">
+                <img src="./pics/section-conheca-servicos/Rectangle 106.jpg" alt="Revisão programada">
+                <h3>Revisão programada</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Tincidunt viverra quis ipsum sed pulvinar in eros. Arcu
+                  libero
+                  bibendum lacus quis nulla eget turpis sem.</p>
+                <span>Saiba mais</span>
+              </a>
+            </div>
+            <div class="conheca-servicos-caixa">
+              <a href="./pagina5.html">
+                <img src="./pics/section-conheca-servicos/img2.jpg" alt="Funilaria e pintura">
+                <h3>Funilaria e pintura</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Tincidunt viverra quis ipsum sed pulvinar in eros. Arcu
+                  libero
+                  bibendum lacus quis nulla eget turpis sem.</p>
+                <span>Saiba mais</span>
+              </a>
+            </div>
+            <div class="conheca-servicos-caixa">
+              <a href="./pagina5.html">
+                <img src="./pics/section-conheca-servicos/img3.jpg" alt="Troca de pneus">
+                <h3>Troca de pneus</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Tincidunt viverra quis ipsum sed pulvinar in eros. Arcu
+                  libero
+                  bibendum lacus quis nulla eget turpis sem.</p>
+                <span>Saiba mais</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato contato-home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-12 form-topo">
+          <h2>Entre em contato com o nosso time</h2>
+          <p>Preencha o formulário, em breve nossa equipe entrará em contato.</p>
+        </div>
+        <div class="col-lg-7 col-12">
+          <form id="form-destaque" action="" autocapitalize="off">
+            <h3>Deixe a sua mensagem</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu email">
+            </div>
+
+            <label for="escolha-de-modelo">Escolha o modelo</label> <br>
+            <select name="modelos" id="select-cor" class="placeholder">
+              <option disabled selected value="">-Escolha uma opção-</option>
+              <option value="SUV">SUV</option>
+              <option value="Sedã">Sedã</option>
+            </select>
+
+            <div class="btn-check-sub">
+              <div class="checkbox">
+                <input type="checkbox" id="politicas">
+                <label for="politicas">Aceito as politicas de privacidade</label>
+              </div>
+              <button type="submit">Solicitar Orçamento</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- jQuery (necessário) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./assets/java-script/main.js"></script>
+  <script src="./js/home.js"></script>
+
+  <footer>
+    <div class="footer-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-12">
+            <div class="logo">
+              <img src="./pics/footer/logo/Logo.png" alt="Lexus Logo">
+              <div class="redes">
+                <div class="caixa-red">
+                  <a href="#"><img src="./pics/footer/logo/insta.png" alt="Instagram"></a>
+                </div>
+                <div class="caixa-red">
+                  <a href="#"><img src="./pics/footer/logo/face.png" alt="Facebook"></a>
+                </div>
+                <div class="caixa-red">
+                  <a href="#"><img src="./pics/footer/logo/ytb.png" alt="YouTube"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="navegue">
+              <h3>Navegue por:</h3>
+              <div class="list-naveg">
+                <ul class="list-gap">
+                  <li><a href="./pagina2.html">Modelos</a></li>
+                  <li><a href="./pagina4.html">Institucional</a></li>
+                  <li><a href="./pagina5.html">Serviços</a></li>
+                  <li><a href="./pagina6.html">Peças e acessórios</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Semi Novos</a></li>
+                  <li><a href="./pagina7.html">Notícias</a></li>
+                  <li><a href="#">Ouvidoria</a></li>
+                  <li><a href="#">Solicite Proposta</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 endereco-pai">
+            <div class="endereco">
+              <h3>Endereço</h3>
+              <p>Av Rogaciano Leite, Nº 323, Fortaleza, Brasil</p>
+              <button>
+                <img src="./pics/footer/logo/maps.png" alt="Ícone mapa"> Ver no mapa
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 termos">
+            <div class="lgpd">
+              <h3>lgpd</h3>
+              <ul>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Termos de uso</a></li>
+              </ul>
+              <button>
+                <img src="./pics/footer/logo/zapzap.png" alt="Ícone WhatsApp"> Fale Conosco
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4 topo-new">
+                <div class="logo-new">
+                  <img src="./pics/footer/logo/logo-01 1.png" alt="Logo">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="logo-atratis">
+                  <img src="./pics/footer/logo/atratis-logo.png" alt="Atratis Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

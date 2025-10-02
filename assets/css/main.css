@@ -1,0 +1,619 @@
+/* main.css - Componentes reutilizáveis */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+/* Header padrão para páginas internas */
+header {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  padding: 22px 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: auto;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+header nav #lupa-dad {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav #Lupa-Header {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+header .btn-padrao {
+  text-transform: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Menu de localização (breadcrumb) */
+.menu-localizacao {
+  padding: 13px 0 3px;
+  border: 1px solid #cad1eb;
+}
+
+.menu-localizacao a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-localizacao span {
+  color: #88898c;
+  margin: 0 9px;
+}
+
+/* Títulos de páginas */
+.servicos, .pag3, .pos-venda {
+  background-color: #fafafa;
+  height: 115px;
+  padding: 33px 0;
+  display: flex;
+  align-items: center;
+}
+
+.servicos h1, .pag3 h1, .pos-venda h1 {
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ===== CARROSSEL DE MODELOS (REUTILIZÁVEL) ===== */
+.carrossel-modelos {
+  background-image: url(../../pics/section-carrosel/Background2.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.carrossel-topo {
+  padding-top: 20px;
+}
+
+.carrossel-topo .titulo-carrossel {
+  flex-direction: column;
+}
+
+/* Botões de Filtro */
+.filtros-carrossel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  gap: 10px;
+}
+
+.filtro-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid #dfdfdf;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.filtro-btn.active {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.filtro-btn:hover:not(.active) {
+  background-color: #f8f9fa;
+  border-color: #333;
+}
+
+/* Conteúdo do Carrossel */
+.carrossel-conteudo {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.carrossel-conteudo h3 {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.carrossel-conteudo .versao {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #484d51;
+  font-size: 1.1rem;
+}
+
+.carrossel-conteudo .destaque {
+  font-weight: 600;
+  color: #d50000;
+  border: none !important;
+  animation: none !important;
+}
+
+.carrossel-conteudo .categoria {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.carrossel-conteudo .item button {
+  display: flex;
+  max-width: 280px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carrossel-conteudo .item button:hover {
+  background-color: #333;
+}
+
+.card-modelo {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card-modelo:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Efeitos Hover */
+.suv, .seda {
+  transition: 0.3s ease, box-shadow 0.5s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  background: white;
+  padding: 20px;
+  height: 100%;
+}
+
+.suv:hover, .seda:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  color: inherit;
+  font-style: normal;
+}
+
+.carrossel-conteudo img {
+  width: 100%;
+  margin-bottom: 22px;
+  max-width: 280px;
+  height: auto;
+  max-height: 125px;
+  object-fit: contain;
+}
+
+
+/* Diferenciais Lexus (comum) */
+.diferenciais-lexus {
+  background-image: linear-gradient(to left, #1d1d1d 50%, #000000b0 75%),
+    linear-gradient(to top, #1d1d1d 10%, #1d1d1d00 100%),
+    url(../../pics/section-diferenciais/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 72px 0 76px;
+}
+
+.diferenciais-lexus #titulo-diferenciais {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  padding-top: 72px;
+  margin-bottom: 48px;
+}
+
+.grid-centro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.grid-container {
+  width: 220px;
+}
+
+.card {
+  position: relative;
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.card img {
+  width: 235px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 200px;
+  height: 80px;
+  width: 1px;
+  background-color: #ffffff;
+}
+
+.card h3 {
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 18px;
+  padding-top: 14px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.grid-container p {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 200;
+  text-align: left;
+  width: 100%;
+  min-height: 60px;
+  padding-left: 18px;
+  display: flex;
+}
+
+/* Formulários base */
+.contato {
+  background-color: #fafafa;
+  height: auto;
+  padding: 30px 0;
+    display: flex;
+}
+
+.contato h2 {
+  width: 100%;
+  max-width: 375px;
+  font-weight: 600;
+}
+
+.contato p {
+  width: 100%;
+  max-width: 335px;
+  color: #484D51;
+}
+
+.contato form {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  max-width: 695px;
+  height: auto;
+  padding: 38px 52px;
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
+
+.contato form h3 {
+  text-transform: none;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.contato form label {
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+.contato form input, .contato form select {
+  padding: 8px;
+  font-size: 14px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  background: white;
+}
+
+.contato form select {
+    width: 100%;
+}
+
+.contato form input::placeholder {
+  color: #999;
+}
+
+select.placeholder {
+  color: #999;
+}
+
+select:not(.placeholder) {
+  color: #000;
+}
+
+.contato .form-topo {
+    margin-top: 100px;
+}
+
+.contato .form-row {
+  display: flex;
+  gap: 20px;
+  margin: 0 0 0 0;
+}
+
+.contato .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contato form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.contato form .checkbox input {
+  width: 18px;
+  height: 18px; }
+
+.contato form .btn-check-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.contato form button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 34px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  height: auto;
+  width: auto;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .footer-img {
+  height: auto;
+  width: auto;
+  background-image: url(../../pics/footer/back.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 55px 0 85px;
+}
+
+footer .footer-img .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-img .redes .caixa-red {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+footer .navegue {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ffffff;
+  margin-left: 85px;
+  max-width: 310px;
+  width: 100%;
+}
+
+footer .navegue h3 {
+  text-transform: none;
+  font-weight: 400;
+}
+
+footer .navegue .list-naveg {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+footer .navegue .list-naveg .list-gap {
+  margin-right: 35px;
+}
+
+footer .navegue .list-naveg ul li {
+  height: 30px;
+  list-style: none;
+}
+
+footer .endereco {
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  justify-self: flex-end;
+}
+
+footer .endereco h3 {
+  text-transform: none;
+}
+
+footer .endereco p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+footer button {
+  font-size: 16px;
+  font-weight: 200;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+footer .lgpd {
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  justify-self: flex-end;
+}
+
+footer .lgpd ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+footer .lgpd ul li {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 200px;
+  list-style: none;
+}
+
+footer .footer-bottom {
+  margin: 24px 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+footer .new-logo {
+  display: flex;
+  width: 100%;
+  max-width: 138px;
+  height: 28px;
+  object-fit: contain;
+}
+
+footer .logo-atratis {
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb-navegacao {
+  padding: 13px 0 3px;
+  border-bottom: 1px solid #cad1eb;
+  background-color: #f8f9fa;
+}
+
+.breadcrumb-navegacao a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb-navegacao a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-navegacao span {
+  color: #88898c;
+  margin: 0 9px;
+}
+
+/* ===== CABEÇALHO DA PÁGINA ===== */
+.cabecalho-pagina {
+  background-color: #fafafa;
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+.cabecalho-pagina h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitulo-pagina {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}

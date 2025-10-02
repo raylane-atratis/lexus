@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pós-venda Lexus Fortaleza - Peças, acessórios e serviços para seu Lexus">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    
+    <!-- CSS Personalizado Unificado -->
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/pages.css"/>
+    <link rel="stylesheet" href="./assets/css/responsive.css"/>
+    
+    <title>Pós-venda | Lexus Fortaleza</title>
+</head>
+
+<body>
+    <!-- Header Padrão -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-12 header-mobile">
+                    <div id="logo">
+                        <a href="./html-novo.html"><img src="./pics/navbar/lexus-logo.png" alt="lexus-logo" id="Lexus-Logo-Header" /></a>
+                    </div>
+                    <div id="menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+                                d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-12 nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="./pagina2.html">Modelos</a></li>
+                            <li><a href="#">Seminovos</a></li>
+                            <li><a href="./pagina4.html">Institucional</a></li>
+                            <li><a href="./pagina5.html">Serviços</a></li>
+                            <li><a href="./pagina6.html">Pós-venda</a></li>
+                            <li><a href="./pagina7.html">Notícias</a></li>
+                            <li><a href="./pagina9.html">Contatos</a></li>
+                        </ul>
+                        <a href="#" class="btn-padrao">Solicite Proposta</a>
+                        <div id="lupa-dad">
+                            <img src="./pics/navbar/lupa.png" alt="procurar" id="Lupa-Header" />
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb de Navegação -->
+    <div class="breadcrumb-navegacao">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p><a href="./html-novo.html">Inicial</a> <span> &gt; </span> Pós-venda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Título da Página -->
+    <section class="cabecalho-pagina" aria-labelledby="titulo-pagina-posvenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="titulo-pagina-posvenda">Pós-venda</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato Pós-venda -->
+    <section class="contato contato-posvenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12 form-topo">
+                    <h2>Personalize. Proteja. Preserve Com o Padrão Lexus</h2>
+                    <p>Descubra a linha de peças e acessórios originais Lexus, desenvolvida para manter o desempenho, a segurança e a sofisticação do seu veículo em cada detalhe.</p>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <form action="" autocapitalize="off">
+                        <h3>Deixe a sua mensagem</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome-posvenda">Nome</label>
+                                <input type="text" id="nome-posvenda" name="nome" placeholder="Nome completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone-posvenda">Telefone</label>
+                                <input type="tel" id="telefone-posvenda" name="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-posvenda">Email</label>
+                            <input type="email" id="email-posvenda" name="email" placeholder="Digite seu email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modelo-posvenda">Escolha o modelo</label>
+                            <select name="modelos" id="modelo-posvenda" required>
+                                <option disabled selected value="">- Escolha uma opção -</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Sedã">Sedã</option>
+                            </select>
+                        </div>
+
+                        <div class="btn-check-sub">
+                            <div class="checkbox">
+                                <input type="checkbox" id="politica-posvenda" required>
+                                <label for="politica-posvenda">Aceito as políticas de privacidade</label>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Padrão -->
+    <footer>
+        <div class="footer-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-12">
+                        <div class="logo">
+                            <img src="./pics/footer/logo/Logo.png" alt="Lexus Logo">
+                            <div class="redes">
+                                <div class="caixa-red">
+                                    <a href="#"><img src="./pics/footer/logo/insta.png" alt="Instagram"></a>
+                                </div>
+                                <div class="caixa-red">
+                                    <a href="#"><img src="./pics/footer/logo/face.png" alt="Facebook"></a>
+                                </div>
+                                <div class="caixa-red">
+                                    <a href="#"><img src="./pics/footer/logo/ytb.png" alt="YouTube"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="navegue">
+                            <h3>Navegue por:</h3>
+                            <div class="list-naveg">
+                                <ul class="list-gap">
+                                    <li><a href="./pagina2.html">Modelos</a></li>
+                                    <li><a href="./pagina4.html">Institucional</a></li>
+                                    <li><a href="./pagina5.html">Serviços</a></li>
+                                    <li><a href="./pagina6.html">Peças e acessórios</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Semi Novos</a></li>
+                                    <li><a href="./pagina7.html">Notícias</a></li>
+                                    <li><a href="#">Ouvidoria</a></li>
+                                    <li><a href="#">Solicite Proposta</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 endereco-pai">
+                        <div class="endereco">
+                            <h3>Endereço</h3>
+                            <p>Av Rogaciano Leite, Nº 323, Fortaleza, Brasil</p>
+                            <button>
+                                <img src="./pics/footer/logo/maps.png" alt="Ícone mapa"> Ver no mapa
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 termos">
+                        <div class="lgpd">
+                            <h3>lgpd</h3>
+                            <ul>
+                                <li><a href="#">Política de privacidade</a></li>
+                                <li><a href="#">Termos de uso</a></li>
+                            </ul>
+                            <button>
+                                <img src="./pics/footer/logo/zapzap.png" alt="Ícone WhatsApp"> Fale Conosco
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4 topo-new">
+                                <div class="logo-new">
+                                    <img src="./pics/footer/logo/logo-01 1.png" alt="Logo">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="logo-atratis">
+                                    <img src="./pics/footer/logo/atratis-logo.png" alt="Atratis Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Unificados -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="./assets/java-script/main.js"></script>
+</body>
+</html>

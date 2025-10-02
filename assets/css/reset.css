@@ -1,0 +1,77 @@
+/* reset.css otimizado */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+
+/* Tipografia consolidada */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1 { font-size: 35px; line-height: 48px; }
+h2 { font-size: 35px; line-height: 48px; }
+h3 { font-size: 28px; line-height: 33px; }
+h4 { font-size: 20px; line-height: 31px; }
+h5 { font-size: 16px; line-height: 23px; }
+h6 { font-size: 14px; line-height: 20.5px; }
+
+p, span, a, li, ul, ol, div {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Botão base */
+.btn-padrao {
+  padding: 10px 36px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-padrao:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+/* Utilidades comuns */
+.text-uppercase { text-transform: uppercase; }
+.text-none { text-transform: none; }
+.font-light { font-weight: 100; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
